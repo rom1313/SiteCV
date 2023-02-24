@@ -1,0 +1,14 @@
+{
+  "name": "site-perso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rom13/genius": "^1.2.28"
+  }
+}

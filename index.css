@@ -1,0 +1,331 @@
+/* todo------------------- FONT---------- */
+@font-face {
+    font-family: "font";
+    src: url("./ressources/Abalone\ Smile.ttf");
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("./ressources/pixelex.ttf");
+}
+
+
+/* todo------------------- ANIMATIONS ---------- */
+@keyframes clignotement {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apparitionmenu {
+    from {
+        left: -80px;
+    }
+
+    to {
+        left: 90px;
+    }
+}
+
+@keyframes effettexte {
+    from {
+
+        color: rgb(216, 216, 216);
+        text-shadow: 0px 0px 5px black;
+    }
+
+    to {
+
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 3px aqua;
+    }
+}
+
+/* todo------------------- BASICS CONFIG ---------- */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "pixel";
+}
+
+html {
+    background-color: rgb(0, 0, 0);
+    user-select: none;
+    background-image: url("./ressources/img/fond.png");
+    background-repeat: repeat;
+    background-position: center;
+    object-fit: contain;
+    cursor: url('./ressources/img/mouse.png'), default;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#particles {
+    position: absolute;
+    height: 99.7%
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2vw;
+}
+
+
+/* todo----------------------- logo site---------------*/
+
+#logo {
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: clignotement 0.8s 3 alternate ease-in-out;
+    border-radius: 200%;
+    width: 12%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 2px, rgb(0, 0, 0) 0px 0px 5px;
+
+    border: solid 2px black;
+
+}
+
+#terre {
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+    width: 21%;
+    opacity: 50%;
+
+}
+
+/* todo----------------------- Menu ------------- */
+
+#blockmenu {
+    position: absolute;
+    top: 45vh;
+    left: 90px;
+    transform: translate(-50%, -50%);
+    animation: apparitionmenu 2s;
+
+}
+
+li {
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 232, 228);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    cursor: url('./ressources/img/mouse2.png'), pointer;
+}
+
+li:hover {
+
+    color: rgb(234, 90, 0);
+
+    box-shadow: 0px 0px 5px rgb(0, 232, 228) inset;
+}
+
+
+#menu {
+    position: relative;
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* todo------------------- contenu page ---------- */
+#contenupagehtml {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+    width: 60vw;
+    height: 60vh;
+    border-radius: 0px 100px / 150px;
+    
+
+    box-shadow: 0px 0px 20px rgb(0, 0, 0) inset, 0px 0px 5px aqua;
+    overflow: scroll;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+
+#contenupagehtml p {
+
+    animation: clignotement 1s 1 ease;
+    color: rgb(234, 90, 0);
+}
+
+#contenupagehtml h1 {
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    padding-top: 3%;
+    font-size: 2vw;
+}
+
+#contenupagehtml::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+/* todo------------------- RECITS ---------- */
+
+.titrerecits {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+
+#titrerecits:hover {
+    background-color: rgb(47, 255, 0);
+
+}
+
+/* todo------------------- CREATIONS ---------- */
+
+#blockcreations {
+    margin-top: 30px;
+
+    display: flex;
+}
+
+#blockcreations div {
+    background-color: brown;
+    width: fit-content;
+    cursor: url('./ressources/img/mouse2.png'), pointer;
+}
+
+
+
+.imgpixel {
+
+    z-index: 3;
+    position: absolute;
+    width: 50%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    pointer-events: none;
+    /*     animation: clignotement 0.8s 1 linear;
+ */
+}
+
+.imgpixelanimation {
+    animation: clignotement 0.5s 1 linear
+}
+
+
+
+#flechedroitepixel {
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 90%;
+    cursor: url('./ressources/img/mouse2.png'), pointer;
+    box-shadow: 0px 0px 5px aqua;
+    border-radius: 90%;
+    animation: clignotement 1s infinite alternate linear;
+    z-index: 3;
+}
+
+#flechegauchepixel {
+    cursor: url('./ressources/img/mouse2.png'), pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 10%;
+    box-shadow: 0px 0px 5px aqua;
+    border-radius: 90%;
+    animation: clignotement 1s infinite alternate linear;
+    z-index: 3;
+}
+
+/* todo------------------- BAS DU SITE ---------- */
+
+#infosite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    column-gap: 5px;
+
+
+}
+
+#infosite img {
+    width: 100px;
+    height: 40%;
+    cursor: pointer;
+
+
+}
+
+#infosite p {
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+}
+
+.invisible {
+    display: none;
+    pointer-events: none;
+}
+
+.titreeffet {
+    animation: clignotement 1s 1 linear;
+    animation: effettexte 1s infinite alternate ease
+}
+
+/* todo------------------- Responsive ---------- */
+
+@media only screen and (min-height: 700px) {
+    #contenupagehtml h1 {
+
+        padding-top: 6%;
+    }
+}
+
+@media (min-height: 1090px) {
+    #contenupagehtml h1 {
+
+        padding-top: 9%;
+    }
+}
