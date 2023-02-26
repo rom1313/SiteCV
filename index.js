@@ -12,6 +12,7 @@ export let pageactuelle = "acceuil"
 export let contenupagehtml = document.querySelector("#contenupagehtml")
 let blockpixelactif = false
 export let countfleche = 1
+let copie = 0
 // todo -------------------------- EVENTS -----------------------------------
 
 // todo--------- events menu
@@ -24,6 +25,38 @@ genius.event("#articles", "mousedown", () => {
     pageactuelle = "articles"
     changerpage("articles", contenupagehtml)
     countfleche = 1
+})
+genius.event("#contact", "mousedown", () => {
+    pageactuelle = "contact"
+    changerpage("contact", contenupagehtml)
+    countfleche = 1
+    // todo-------- copie contact
+    genius.event("#mailcopie", "mousedown", (e) => {
+
+        let p = genius.element("p", "#textecopie")
+        genius.textContent("copié", "#textecopie")
+        p.style.left = e.clientX + 20 + "px"
+        p.style.top = e.clientY - 20 + "px"
+        genius.timeursecondes(0.5, () => {
+            p.remove()
+        })
+        document.querySelector("#telcopie").src = "./ressources/img/copie.png"
+        e.target.src = "./ressources/img/copie2.png";
+        navigator.clipboard.writeText("romain.gavin@outlook.fr");
+    })
+    genius.event("#telcopie", "mousedown", (e) => {
+        let p = genius.element("p", "#textecopie")
+        genius.textContent("copié", "#textecopie")
+        p.style.left = e.clientX + 20 + "px"
+        p.style.top = e.clientY - 20 + "px"
+        genius.timeursecondes(0.5, () => {
+            p.remove()
+        })
+        document.querySelector("#mailcopie").src = "./ressources/img/copie.png"
+        e.target.src = "./ressources/img/copie2.png";
+        navigator.clipboard.writeText("0751133562");
+
+    })
 })
 
 genius.event("#creations", "mousedown", () => {
@@ -90,7 +123,7 @@ genius.event("#logoinfo", "mousedown", () => {
 
 onload = () => {
     particlesJS.load('particles', 'json.json')
-    console.log(genius.salaireSMIC(24, "net"));
+
 
 }
 oncontextmenu = () => {

@@ -23,11 +23,11 @@
 
 @keyframes apparitionmenu {
     from {
-        left: -80px;
+        left: -20vw;
     }
 
     to {
-        left: 90px;
+        left: 7vw;
     }
 }
 
@@ -115,7 +115,7 @@ p {
 #blockmenu {
     position: absolute;
     top: 45vh;
-    left: 90px;
+    left: 7vw;
     transform: translate(-50%, -50%);
     animation: apparitionmenu 2s;
 
@@ -128,7 +128,7 @@ li {
     border-radius: 5px;
     text-align: center;
     padding: 5px;
-    font-size: 15px;
+    font-size: 1vw;
     color: white;
     cursor: url('./ressources/img/mouse2.png'), pointer;
 }
@@ -159,7 +159,7 @@ li:hover {
     width: 60vw;
     height: 60vh;
     border-radius: 0px 100px / 150px;
-    
+
 
     box-shadow: 0px 0px 20px rgb(0, 0, 0) inset, 0px 0px 5px aqua;
     overflow: scroll;
@@ -220,6 +220,7 @@ li:hover {
     background-color: brown;
     width: fit-content;
     cursor: url('./ressources/img/mouse2.png'), pointer;
+    font-size: 1.2vw;
 }
 
 
@@ -268,6 +269,31 @@ li:hover {
     animation: clignotement 1s infinite alternate linear;
     z-index: 3;
 }
+
+/* todo------------------- CONTACT ---------- */
+#infocontact {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#mailcopie,#telcopie {
+    margin-left: 15px;
+    position: absolute;
+    width: 17px;
+  
+    cursor: url('./ressources/img/mouse2.png'), pointer;
+}
+#textecopie{
+    position: absolute;
+    z-index: 3;
+    color: greenyellow;
+    font-size: 15px;
+   
+
+}
+
 
 /* todo------------------- BAS DU SITE ---------- */
 
@@ -327,5 +353,30 @@ li:hover {
     #contenupagehtml h1 {
 
         padding-top: 9%;
+    }
+}
+
+
+@media (min-height: 850px) {
+    li {
+        font-size: 1.2vw;
+    }
+
+    #contenupagehtml h1 {
+
+        font-size: 2.5vw;
+    }
+
+    #flechedroitepixel {
+
+
+        left: 85%;
+
+    }
+
+    #flechegauchepixel {
+
+        left: 15%;
+
     }
 }

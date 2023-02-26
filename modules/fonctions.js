@@ -1,5 +1,5 @@
 // todo -------------------------- IMPORTS -----------------------------------
-import { pageacceuil, pagearticles, pagecreations } from "./pages.js"
+import { pageacceuil, pagearticles, pagecreations,pagecontact } from "./pages.js"
 import { pageactuelle, contenupagehtml, genius } from "../index.js"
 import { recits } from "./variables.js"
 
@@ -25,6 +25,10 @@ export function changerpage(page, element) {
     else if (page === "creations") {
         console.log('créations');
         div.innerHTML = pagecreations
+    }
+    else if(page ==="contact"){
+        console.log('contact');
+        div.innerHTML = pagecontact
     }
     else { return }
 
