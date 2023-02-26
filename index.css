@@ -72,7 +72,7 @@ body {
 
 #particles {
     position: absolute;
-    height: 99.7%
+    height: 98.7%
 }
 
 p {
@@ -159,7 +159,7 @@ li:hover {
     width: 60vw;
     height: 60vh;
     border-radius: 0px 100px / 150px;
-
+    scrollbar-width: none;
 
     box-shadow: 0px 0px 20px rgb(0, 0, 0) inset, 0px 0px 5px aqua;
     overflow: scroll;
@@ -272,25 +272,28 @@ li:hover {
 
 /* todo------------------- CONTACT ---------- */
 #infocontact {
-    
+
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-#mailcopie,#telcopie {
+#mailcopie,
+#telcopie {
+
     margin-left: 15px;
     position: absolute;
     width: 17px;
-  
+
     cursor: url('./ressources/img/mouse2.png'), pointer;
 }
-#textecopie{
+
+#textecopie {
     position: absolute;
     z-index: 3;
     color: greenyellow;
     font-size: 15px;
-   
+
 
 }
 
@@ -303,7 +306,6 @@ li:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-
     bottom: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -318,7 +320,7 @@ li:hover {
 #infosite img {
     width: 100px;
     height: 40%;
-    cursor: pointer;
+    cursor: url('./ressources/img/mouse2.png'), pointer;
 
 
 }
@@ -379,4 +381,46 @@ li:hover {
         left: 15%;
 
     }
+}
+
+/* todo------------------- Responsive tablette---------- */
+@media (min-height: 600px) and (max-width:1360px) {
+
+    #contenupagehtml {
+        width: 60vw;
+        height: 50vh;
+
+
+    }
+
+    p {
+        font-size: 1.1vh;
+        margin-top: 25px;
+    }
+
+    .titreeffet {
+        margin-bottom: 5vh;
+    }
+
+}
+/* todo------------------- Responsive phone---------- */
+
+@media (min-height: 700px) and (max-width:300px) {
+
+    #contenupagehtml {
+        width: 70vw;
+        height: 60vh;
+
+
+    }
+
+    p {
+        
+        margin-top: 25px;
+    }
+
+    .titreeffet {
+        margin-bottom: 5vh;
+    }
+
 }

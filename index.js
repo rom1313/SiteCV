@@ -16,22 +16,22 @@ let copie = 0
 // todo -------------------------- EVENTS -----------------------------------
 
 // todo--------- events menu
-genius.event("#acceuil", "mousedown", () => {
+genius.event("#acceuil", "click", () => {
     changerpage("acceuil", contenupagehtml)
     countfleche = 1
 })
 
-genius.event("#articles", "mousedown", () => {
+genius.event("#articles", "click", () => {
     pageactuelle = "articles"
     changerpage("articles", contenupagehtml)
     countfleche = 1
 })
-genius.event("#contact", "mousedown", () => {
+genius.event("#contact", "click", () => {
     pageactuelle = "contact"
     changerpage("contact", contenupagehtml)
     countfleche = 1
     // todo-------- copie contact
-    genius.event("#mailcopie", "mousedown", (e) => {
+    genius.event("#mailcopie", "click", (e) => {
 
         let p = genius.element("p", "#textecopie")
         genius.textContent("copié", "#textecopie")
@@ -44,7 +44,7 @@ genius.event("#contact", "mousedown", () => {
         e.target.src = "./ressources/img/copie2.png";
         navigator.clipboard.writeText("romain.gavin@outlook.fr");
     })
-    genius.event("#telcopie", "mousedown", (e) => {
+    genius.event("#telcopie", "click", (e) => {
         let p = genius.element("p", "#textecopie")
         genius.textContent("copié", "#textecopie")
         p.style.left = e.clientX + 20 + "px"
@@ -59,12 +59,12 @@ genius.event("#contact", "mousedown", () => {
     })
 })
 
-genius.event("#creations", "mousedown", () => {
+genius.event("#creations", "click", () => {
     pageactuelle = "creations"
     changerpage("creations", contenupagehtml)
     countfleche = 1
     // todo-------- events blockpixelart
-    genius.event("#blockpixelart", "mousedown", () => {
+    genius.event("#blockpixelart", "click", () => {
         let img = genius.element("img", ".imgpixel")
         contenupagehtml.appendChild(img)
         img.src = `./ressources/img/pixelart/${[countfleche]}.png`
@@ -87,7 +87,7 @@ genius.event("#creations", "mousedown", () => {
             else { }
         })
 
-        genius.event("#flechedroitepixel", "mousedown", () => {
+        genius.event("#flechedroitepixel", "click", () => {
 
             if (countfleche < imagespixelart.length) {
                 img.classList.remove("imgpixelanimation")
@@ -113,7 +113,7 @@ genius.event("#creations", "mousedown", () => {
 
 
 // todo-------- events logo powered
-genius.event("#logoinfo", "mousedown", () => {
+genius.event("#logoinfo", "click", () => {
     window.open("https://www.npmjs.com/package/@rom13/genius-browser")
 })
 
