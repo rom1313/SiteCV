@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@rom13/genius": "^1.2.28"
+    "@rom13/genius": "^1.2.29"
   }
 }

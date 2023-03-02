@@ -113,8 +113,11 @@ genius.event("#creations", "click", () => {
 
 
 // todo-------- events logo powered
-genius.event("#logoinfo", "click", () => {
+genius.event("#infosite", "click", () => {
+    
     window.open("https://www.npmjs.com/package/@rom13/genius-browser")
+  
+    
 })
 
 
@@ -125,10 +128,33 @@ onload = () => {
     particlesJS.load('particles', 'json.json')
 
 
+
 }
 oncontextmenu = () => {
     return false
 }
+/* document.onkeydown = function (e) {
+ 
+    // disable F12 key
+    if(e.keyCode == 123) {
+        return false;
+    }
+
+    // disable I key
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+        return false;
+    }
+
+    // disable J key
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        return false;
+    }
+
+    // disable U key
+    if(e.ctrlKey && e.keyCode == 85) {
+        return false;
+    }
+} */
 
 // todo -------------------------- EVENTS SON -----------------------------------
 

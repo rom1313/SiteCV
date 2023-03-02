@@ -1,4 +1,4 @@
 export const pageacceuil = `<h1 class="titreeffet">Gavin Romain</h1><p>Développeur Web Junior</p>`
 export const pagearticles = ` <h1 class="titreeffet">Skills</h1>`
-export const pagecreations = ` <h1 class="titreeffet">Creations</h1><div id="blockcreations"><img id="flechegauchepixel" class="invisible"src="./ressources/img/flechegauche.png" alt=""><img id="flechedroitepixel" class="invisible "src="./ressources/img/flechedroite.png" alt=""><div id="blockpixelart">Projets Dev</div></div>`
+export const pagecreations = ` <h1 class="titreeffet">Projets</h1><div id="blockcreations"><img id="flechegauchepixel" class="invisible"src="./ressources/img/flechegauche.png" alt=""><img id="flechedroitepixel" class="invisible "src="./ressources/img/flechedroite.png" alt=""><div id="blockpixelart"><h2>Creations</h2></div></div>`
 export const pagecontact = `<h1 class="titreeffet">Contact</h1><div id="infocontact"><p>Mail : romain.gavin@outlook.fr <span><img id="mailcopie"src="./ressources/img/copie.png" alt=""></span></p><p>Tel : 07.51.13.35.62 <span><img id="telcopie"src="./ressources/img/copie.png" alt=""></span></p></div>`
