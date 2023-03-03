@@ -100,7 +100,7 @@ p {
     width: 12%;
     box-shadow: rgba(0, 255, 255, 0.223) 0px 3px 30px;
 
-   
+
 
 }
 
@@ -217,11 +217,12 @@ li:hover {
     background-color: rgb(47, 255, 0);
 
 }
-.logoskill{
+
+.logoskill {
     width: 4vh;
     position: absolute;
-   margin-left: 15px;
-   margin-top: -0.6vh;
+    margin-left: 15px;
+    margin-top: -0.6vh;
 }
 
 /* todo------------------- CREATIONS ---------- */
@@ -246,7 +247,7 @@ li:hover {
     color: white;
     transition: box-shadow, background-color, color, 0.3s ease;
     height: 5vh;
-    animation: clignotement 1s 1 linear;
+    animation: clignotement 1s ease-in linear;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.669);
     text-shadow: 0PX 0PX 2px black;
 }
@@ -284,7 +285,7 @@ li:hover {
 }
 
 .imgpixelanimation {
-    animation: clignotement 1s 1 linear
+    animation: clignotement 1s 1 ease-in;
 }
 
 
@@ -312,6 +313,19 @@ li:hover {
     border-radius: 90%;
     animation: clignotement 1s infinite alternate linear;
     z-index: 3;
+}
+
+#descriptionpixel {
+    z-index: 5;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: black;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px aqua;
+    animation: clignotement 1s 1 ease-in
 }
 
 /* todo------------------- CONTACT ---------- */
@@ -436,20 +450,23 @@ li:hover {
     .titreeffet {
         margin-bottom: 5vh;
     }
+
     #blockmenu {
-       
+
         position: absolute;
         top: 30vh;
         left: 50%;
         transform: translate(-50%, -50%);
         animation: apparitionmenu 2s;
-    
+
     }
-    #menu{
+
+    #menu {
         display: flex;
         flex-direction: row;
     }
-    li{
+
+    li {
         font-size: 1.5vh;
         margin: 5pX;
     }

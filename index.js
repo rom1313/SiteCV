@@ -2,36 +2,41 @@
 
 // todo -------------------------- IMPORTS -----------------------------------
 
-import { changerpage, } from "./modules/fonctions.js"
-import { recits, imagespixelart, son } from "./modules/variables.js"
+import { changerpage, blockpixelfunc } from "./modules/fonctions.js"
+import { recits, imagespixelart, son, descriptiontext } from "./modules/variables.js"
 export const genius = $
 
 // todo -------------------------- MAIN -----------------------------------
 
 export let pageactuelle = "acceuil"
 export let contenupagehtml = document.querySelector("#contenupagehtml")
-let blockpixelactif = false
-export let countfleche = 1
-let copie = 0
+
+export let countfleche = {
+    value: 0
+}
+
+
 // todo -------------------------- EVENTS -----------------------------------
 
 // todo--------- events menu
 genius.event("#acceuil", "click", () => {
     changerpage("acceuil", contenupagehtml)
-    countfleche = 1
+
 })
 
 genius.event("#articles", "click", () => {
     pageactuelle = "articles"
     changerpage("articles", contenupagehtml)
-    countfleche = 1
+
 })
 genius.event("#contact", "click", () => {
     pageactuelle = "contact"
     changerpage("contact", contenupagehtml)
-    countfleche = 1
+
     // todo-------- copie contact
     genius.event("#mailcopie", "click", (e) => {
+        son.boutton.volume = 0.1
+        son.boutton.play()
 
         let p = genius.element("p", "#textecopie")
         genius.textContent("copié", "#textecopie")
@@ -45,6 +50,8 @@ genius.event("#contact", "click", () => {
         navigator.clipboard.writeText("romain.gavin@outlook.fr");
     })
     genius.event("#telcopie", "click", (e) => {
+        son.boutton.volume = 0.1
+        son.boutton.play()
         let p = genius.element("p", "#textecopie")
         genius.textContent("copié", "#textecopie")
         p.style.left = e.clientX + 20 + "px"
@@ -60,52 +67,15 @@ genius.event("#contact", "click", () => {
 })
 
 genius.event("#creations", "click", () => {
-    pageactuelle = "creations"
+    son.boutton.volume = 0.1
+    son.boutton.play()
     changerpage("creations", contenupagehtml)
-    countfleche = 1
-    // todo-------- events blockpixelart
-    genius.event("#blockpixelart", "click", () => {
-        blockcreations.style.opacity = 0
-        let img = genius.element("img", ".imgpixel")
-        contenupagehtml.appendChild(img)
-        img.src = `./ressources/img/pixelart/${[countfleche]}.png`
-        document.querySelector("#blockpixelart").classList.add("invisible")
-        document.querySelector("#flechegauchepixel").classList.remove("invisible")
-        document.querySelector("#flechedroitepixel").classList.remove("invisible")
-        genius.event("#flechegauchepixel", "click", () => {
-
-            if (countfleche != 1) {
-                img.classList.remove("imgpixelanimation")
-                countfleche--
-                genius.timeursecondes(0.01, () => {
-                    img.classList.add("imgpixelanimation")
-                    img.src = `./ressources/img/pixelart/${[countfleche]}.png`
-                    console.log(countfleche);
-                })
+    pageactuelle = "creations"
+    countfleche.value = 0
+    blockpixelfunc()
+   
 
 
-            }
-            else { return }
-        })
-
-        genius.event("#flechedroitepixel", "click", () => {
-
-            if (countfleche < imagespixelart.length) {
-                img.classList.remove("imgpixelanimation")
-                countfleche++
-                genius.timeursecondes(0.01, () => {
-                    img.classList.add("imgpixelanimation")
-                    img.src = `./ressources/img/pixelart/${[countfleche]}.png`
-                    console.log(countfleche);
-                })
-
-            }
-            else { }
-        })
-
-
-
-    })
 })
 
 
@@ -127,6 +97,7 @@ genius.event("#infosite", "click", () => {
 
 onload = () => {
     particlesJS.load('particles', 'json.json')
+
 
 
 

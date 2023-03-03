@@ -6,6 +6,8 @@ export const recits =
     { titre: "Design", img: "./ressources/img/technos/art.png" },
     ]
 
+    export const descriptiontext = ["Overwatch","StarWars wiki","jeu phaser", "Librairie NPM"]
+
 export const imagespixelart = ["./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png"]
 
 export const son =
