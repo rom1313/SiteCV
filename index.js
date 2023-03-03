@@ -65,13 +65,14 @@ genius.event("#creations", "click", () => {
     countfleche = 1
     // todo-------- events blockpixelart
     genius.event("#blockpixelart", "click", () => {
+        blockcreations.style.opacity = 0
         let img = genius.element("img", ".imgpixel")
         contenupagehtml.appendChild(img)
         img.src = `./ressources/img/pixelart/${[countfleche]}.png`
         document.querySelector("#blockpixelart").classList.add("invisible")
         document.querySelector("#flechegauchepixel").classList.remove("invisible")
         document.querySelector("#flechedroitepixel").classList.remove("invisible")
-        genius.event("#flechegauchepixel", "mousedown", () => {
+        genius.event("#flechegauchepixel", "click", () => {
 
             if (countfleche != 1) {
                 img.classList.remove("imgpixelanimation")
@@ -84,7 +85,7 @@ genius.event("#creations", "click", () => {
 
 
             }
-            else { }
+            else { return }
         })
 
         genius.event("#flechedroitepixel", "click", () => {
@@ -114,10 +115,10 @@ genius.event("#creations", "click", () => {
 
 // todo-------- events logo powered
 genius.event("#infosite", "click", () => {
-    
+
     window.open("https://www.npmjs.com/package/@rom13/genius-browser")
-  
-    
+
+
 })
 
 

@@ -16,11 +16,9 @@ export function changerpage(page, element) {
         div.innerHTML = pagearticles
         recits.forEach(element => {
             let p = genius.element('p', '.titrerecits')
-            p.textContent = element.titre 
+            p.innerHTML = `${element.titre}   <img class="logoskill"src="${element.img}" alt="" srcset="">`
             contenupagehtml.appendChild(p)
         });
-
-
     }
     else if (page === "creations") {
         console.log('créations');
