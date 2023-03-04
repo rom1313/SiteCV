@@ -33,7 +33,7 @@ genius.event("#contact", "click", () => {
     pageactuelle = "contact"
     changerpage("contact", contenupagehtml)
 
-    // todo-------- copie contact
+    // todo-------- mail contact
     genius.event("#mailcopie", "click", (e) => {
         son.boutton.volume = 0.1
         son.boutton.play()
@@ -49,6 +49,7 @@ genius.event("#contact", "click", () => {
         e.target.src = "./ressources/img/copie2.png";
         navigator.clipboard.writeText("romain.gavin@outlook.fr");
     })
+    // todo-------- tel contact
     genius.event("#telcopie", "click", (e) => {
         son.boutton.volume = 0.1
         son.boutton.play()
@@ -65,7 +66,7 @@ genius.event("#contact", "click", () => {
 
     })
 })
-
+// todo-------- Boutton Creation
 genius.event("#creations", "click", () => {
     son.boutton.volume = 0.1
     son.boutton.play()
@@ -73,7 +74,7 @@ genius.event("#creations", "click", () => {
     pageactuelle = "creations"
     countfleche.value = 0
     blockpixelfunc()
-   
+
 
 
 })
@@ -83,7 +84,7 @@ genius.event("#creations", "click", () => {
 
 
 
-// todo-------- events logo powered
+// todo-------- events genius powered
 genius.event("#infosite", "click", () => {
 
     window.open("https://www.npmjs.com/package/@rom13/genius-browser")

@@ -30,6 +30,15 @@
         left: 8vw;
     }
 }
+@keyframes apparitionmenu2 {
+    from {
+        left: -20vw;
+    }
+
+    to {
+        left: 50%;
+    }
+}
 
 @keyframes effettexte {
     from {
@@ -321,11 +330,18 @@ li:hover {
     top: 80%;
     left: 50%;
     transform: translate(-50%, 50%);
-    background-color: black;
-    padding: 2px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px aqua;
+   
+    padding: 7px;
+    
+    
     animation: clignotement 1s 1 ease-in
+}
+.lien{
+    cursor: url('./ressources/img/mouse2.png'), pointer;
+    color: beige;
+}
+.lien:hover{
+    color: aqua;
 }
 
 /* todo------------------- CONTACT ---------- */
@@ -434,7 +450,12 @@ li:hover {
 
 /* todo------------------- Responsive tablette---------- */
 @media (min-height: 600px) and (max-width:1360px) {
-
+    
+    
+    #blockcreations h2 {
+        padding: 11px;
+        font-size: 50px;
+    }
     #contenupagehtml {
         width: 80vw;
         height: 50vh;
@@ -443,8 +464,8 @@ li:hover {
     }
 
     p {
-        font-size: 1.2vh;
-        margin-top: 3.8vh;
+        font-size: 1.5vh;
+        margin-top: 3vh;
     }
 
     .titreeffet {
@@ -457,7 +478,7 @@ li:hover {
         top: 30vh;
         left: 50%;
         transform: translate(-50%, -50%);
-        animation: apparitionmenu 2s;
+        animation: apparitionmenu2 2s;
 
     }
 
@@ -470,27 +491,113 @@ li:hover {
         font-size: 1.5vh;
         margin: 5pX;
     }
+    #terre {
+    
+        width: 41%;
+       
+    
+    }
+    #logo {
+    
+        width: 22%;
+        
+    
+    
+    
+    }
+    #contenupagehtml h1 {
+        
+       
+        font-size: 5.5vw;
+    }
+    .logoskill {
+        display: none;
+    }
+   
+    
 
 }
 
 /* todo------------------- Responsive phone---------- */
 
-@media (min-height: 700px) and (max-width:300px) {
+@media (min-height: 300px) and (max-width:500px) {
+   
+  
+    #descriptionpixel {
+      
+        top: 70%;
+        left: 50%;
+    width: 100vw;
+       
+        padding: 7px;
+        
+        
+        animation: clignotement 1s 1 ease-in
+    }
+    #blockcreations h2 {
+        padding: 11px;
+        font-size: 30px;
+    }
 
     #contenupagehtml {
-        width: 70vw;
-        height: 60vh;
+        width: 100vw;
+        height: 50vh;
 
 
+    }
+    .imgpixel {
+
+       
+        width: 75%;
+    
+    
+        /*     animation: clignotement 0.8s 1 linear;
+     */
     }
 
     p {
 
         margin-top: 25px;
+         font-size: 1.5vh;
     }
 
     .titreeffet {
         margin-bottom: 5vh;
+    }
+    #logo {
+    
+        width: 32%;
+        
+    
+    
+    
+    }
+    #terre {
+    
+        width: 51%;
+       
+    
+    }
+    .logoskill {
+        display: none;
+    }
+    #infosite{
+        width: 100vw;
+    }
+    #contenupagehtml h1 {
+        
+        padding-top: 1%;
+        font-size: 5.5vw;
+    }
+    #flechegauchepixel {
+      
+        left: 6%;
+      
+    }
+    #flechedroitepixel {
+      
+        left: 94%;
+      
     }
 
 }
