@@ -83,7 +83,7 @@ export function blockpixelfunc() {
                 countfleche.value++
                 document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
                 img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
-                console.log(countfleche);
+                
                 lien()
             }
             else { return }
