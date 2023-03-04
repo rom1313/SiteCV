@@ -30,6 +30,7 @@
         left: 8vw;
     }
 }
+
 @keyframes apparitionmenu2 {
     from {
         left: -20vw;
@@ -92,7 +93,8 @@ body {
 
 p {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
+    line-height: 15px;
 }
 
 
@@ -166,19 +168,20 @@ li:hover {
 }
 
 /* todo------------------- contenu page ---------- */
+
 #contenupagehtml {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(14, 14, 14);
+
     text-align: center;
     width: 60vw;
     height: 60vh;
     border-radius: 0px 100px / 150px;
     scrollbar-width: none;
     z-index: 6;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0) inset, 0px 0px 5px aqua;
+
     overflow: scroll;
     display: flex;
     justify-content: baseline;
@@ -196,7 +199,7 @@ li:hover {
 
 #contenupagehtml h1 {
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
-    padding-top: 1%;
+    margin-top: 3.5vh;
     font-size: 2.5vw;
 }
 
@@ -205,16 +208,17 @@ li:hover {
     /* for Chrome, Safari, and Opera */
 }
 
+#info {
+    margin-top: 8%;
+}
+
 /* todo------------------- RECITS ---------- */
 
 .titrerecits {
 
-
+line-height: 1vh;
     border-radius: 15px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 7px 8px 7px 8px;
     width: fit-content;
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 0px 1px 3px aqua;
@@ -243,13 +247,13 @@ li:hover {
 }
 
 #blockcreations div {
-    margin-top: 5vh;
+    margin-top: 0vh;
     display: flex;
     align-items: center;
     border-radius: 10px;
     width: fit-content;
     cursor: url('./ressources/img/mouse2.png'), pointer;
-    font-size: 1.2vw;
+
     padding: 5px;
     box-shadow: 0px 0px 2px black;
     background-color: rgb(0, 0, 0);
@@ -269,8 +273,9 @@ li:hover {
 }
 
 #blockcreations h2 {
+
     padding: 11px;
-    font-size: 12px;
+    font-size: 22px;
 }
 
 
@@ -302,7 +307,7 @@ li:hover {
 #flechedroitepixel {
 
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     left: 80%;
     cursor: url('./ressources/img/mouse2.png'), pointer;
@@ -315,7 +320,7 @@ li:hover {
 #flechegauchepixel {
     cursor: url('./ressources/img/mouse2.png'), pointer;
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     left: 20%;
     box-shadow: 0px 0px 5px aqua;
@@ -327,26 +332,28 @@ li:hover {
 #descriptionpixel {
     z-index: 5;
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, 50%);
-   
+    width: 100%;
     padding: 7px;
-    
-    
+
+
     animation: clignotement 1s 1 ease-in
 }
-.lien{
+
+.lien {
     cursor: url('./ressources/img/mouse2.png'), pointer;
     color: beige;
 }
-.lien:hover{
+
+.lien:hover {
     color: aqua;
 }
 
 /* todo------------------- CONTACT ---------- */
 #infocontact {
-
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -381,12 +388,12 @@ li:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0px;
+    bottom: -2vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
-    margin: 0;
-    padding: 0;
+
+
     column-gap: 5px;
     cursor: url('./ressources/img/mouse2.png'), pointer;
 
@@ -417,7 +424,7 @@ li:hover {
 @media only screen and (min-height: 700px) {
     #contenupagehtml h1 {
 
-        padding-top: 3%;
+        padding-top: 5%;
     }
 }
 
@@ -450,12 +457,34 @@ li:hover {
 
 /* todo------------------- Responsive tablette---------- */
 @media (min-height: 600px) and (max-width:1360px) {
-    
-    
+    #flechegauchepixel {
+        margin-top: 3.5vh;
+        left: 6%;
+
+    }
+
+    #flechedroitepixel {
+        margin-top: 3.5vh;
+        left: 94%;
+
+    }
+
+    .imgpixel {
+
+
+        width: 75%;
+
+
+
+    }
+
+
+
     #blockcreations h2 {
         padding: 11px;
-        font-size: 50px;
+        font-size: 30px;
     }
+
     #contenupagehtml {
         width: 80vw;
         height: 50vh;
@@ -464,7 +493,7 @@ li:hover {
     }
 
     p {
-        font-size: 1.5vh;
+        font-size: 1.8vh;
         margin-top: 3vh;
     }
 
@@ -491,49 +520,54 @@ li:hover {
         font-size: 1.5vh;
         margin: 5pX;
     }
+
     #terre {
-    
+
         width: 41%;
-       
-    
+
+
     }
+
     #logo {
-    
+
         width: 22%;
-        
-    
-    
-    
+
+
+
+
     }
+
     #contenupagehtml h1 {
-        
-       
+
+
         font-size: 5.5vw;
     }
+
     .logoskill {
         display: none;
     }
-   
-    
+
+
 
 }
 
 /* todo------------------- Responsive phone---------- */
 
 @media (min-height: 300px) and (max-width:500px) {
-   
-  
+
+
     #descriptionpixel {
-      
+
         top: 70%;
         left: 50%;
-    width: 100vw;
-       
+        width: 100vw;
+
         padding: 7px;
-        
-        
+
+
         animation: clignotement 1s 1 ease-in
     }
+
     #blockcreations h2 {
         padding: 11px;
         font-size: 30px;
@@ -545,59 +579,67 @@ li:hover {
 
 
     }
+
     .imgpixel {
 
-       
+
         width: 75%;
-    
-    
-        /*     animation: clignotement 0.8s 1 linear;
-     */
+
+
+
     }
 
     p {
 
-        margin-top: 25px;
-         font-size: 1.5vh;
+        margin-top: 15px;
+        font-size: 1.5vh;
+        line-height: 2vh
     }
 
     .titreeffet {
         margin-bottom: 5vh;
     }
+
     #logo {
-    
+
         width: 32%;
-        
-    
-    
-    
+
+
+
+
     }
+
     #terre {
-    
+
         width: 51%;
-       
-    
+
+
     }
+
     .logoskill {
         display: none;
     }
-    #infosite{
+
+    #infosite {
         width: 100vw;
     }
+
     #contenupagehtml h1 {
-        
-        padding-top: 1%;
+
+        padding-top: 9%;
         font-size: 5.5vw;
     }
+
     #flechegauchepixel {
-      
+
         left: 6%;
-      
+
     }
+
     #flechedroitepixel {
-      
+
         left: 94%;
-      
+
     }
 
 }

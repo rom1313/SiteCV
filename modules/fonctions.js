@@ -9,11 +9,11 @@ import { recits, descriptiontext, imagespixelart, son } from "./variables.js"
 export function changerpage(page, element) {
     let div = element
     if (page === "acceuil") {
-        console.log('acceuil');
+
         div.innerHTML = pageacceuil
     }
     else if (page === "articles") {
-        console.log('articles');
+
         div.innerHTML = pagearticles
         recits.forEach(element => {
             let p = genius.element('p', '.titrerecits')
@@ -22,11 +22,11 @@ export function changerpage(page, element) {
         });
     }
     else if (page === "creations") {
-        console.log('créations');
+
         div.innerHTML = pagecreations
     }
     else if (page === "contact") {
-        console.log('contact');
+
         div.innerHTML = pagecontact
     }
     else { return }
@@ -56,7 +56,7 @@ export function blockpixelfunc() {
         img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
         document.querySelector("#flechegauchepixel").classList.remove("invisible")
         document.querySelector("#flechedroitepixel").classList.remove("invisible")
-        console.log(document.querySelector("#descriptionpixel"));
+
         document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
         document.querySelector("#descriptionpixel").classList.remove("invisible")
         genius.event("#flechegauchepixel", "click", () => {

@@ -1,6 +1,8 @@
 export const pageacceuil = `
 <h1 class="titreeffet">Gavin Romain</h1>
-<p>Développeur Web Junior</p>
+<p id="info">Développeur Javascript fullstack Junior</p>
+<p>34 ans</p>
+<p>Montpellier</p>
 `
 export const pagearticles = ` 
 <h1 class="titreeffet">Skills</h1>
