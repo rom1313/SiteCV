@@ -51,6 +51,7 @@ export function blockpixelfunc() {
         son.boutton.volume = 0.1
         son.boutton.play()
         blockcreations.style.opacity = 0
+        blockcreations.style.pointerEvents = "none"
         let img = genius.element("img", ".imgpixel")
         contenupagehtml.appendChild(img)
         img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
