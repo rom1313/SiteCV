@@ -2,8 +2,10 @@
   "name": "site-perso",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  
   "scripts": {
+    "start": "NODE_ENV=production & node server.js",
     "test": "node index.js"
   },
   "author": "",
