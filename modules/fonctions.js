@@ -52,8 +52,13 @@ export function blockpixelfunc() {
         son.boutton.play()
         blockcreations.style.opacity = 0
         blockcreations.style.pointerEvents = "none"
+        let p = genius.element("p", "#retourcreations")
+        p.textContent = "↩"
         let img = genius.element("img", ".imgpixel")
-        contenupagehtml.appendChild(img)
+        let div = genius.element("div", "#blockimgpixel")
+        contenupagehtml.appendChild(div)
+     /*    div.appendChild(p) */
+        div.appendChild(img)
         img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
         document.querySelector("#flechegauchepixel").classList.remove("invisible")
         document.querySelector("#flechedroitepixel").classList.remove("invisible")

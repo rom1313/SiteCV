@@ -11,9 +11,12 @@ export const pagecreations = `
 <h1 class="titreeffet">Projets</h1>
 <div id="blockcreations">
 <div id="blockpixelart">
+
 <h2 id="bouttoncreations">Creations</h2>
 </div>
+
 </div>
+
 <img id="flechegauchepixel" class="invisible"src="./ressources/img/flechegauche.png" alt="">
 <img id="flechedroitepixel" class="invisible "src="./ressources/img/flechedroite.png" alt="">
 <p id="descriptionpixel" class="invisible"><p/>`
