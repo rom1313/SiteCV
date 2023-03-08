@@ -98,6 +98,7 @@ genius.event("#infosite", "click", () => {
 
 onload = () => {
     particlesJS.load('particles', 'json.json')
+   
 
 
 
