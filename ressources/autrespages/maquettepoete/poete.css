@@ -12,14 +12,47 @@ html {
     background-repeat: no-repeat;
     background-size: 50%;
     background-color: black;
+    text-align: center;
+    background-attachment: fixed;
+    user-select: none;
 }
 
 h1 {
     position: absolute;
     top: 10%;
-    left: 30%;
+    left: 15%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
+    color: rgb(236, 230, 209);
     font-family: "poete";
     font-size: 15vh
+}
+
+p {
+    font-family: "poete";
+    color: rgb(255, 255, 255);
+    margin: 10vw;
+
+    font-size: 2vw;
+    text-shadow: 0px 0px 10px red;
+}
+
+#page {
+    margin-top: 45vh;
+
+}
+
+footer {
+    display: flex;
+   justify-content: center;
+
+}
+footer h3 {
+    color: antiquewhite;
+    margin: 0;
+    font-family: "poete";
+    text-shadow: 0px 0px 10px red;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 0px 0px 10px rgb(255, 0, 0) ;
 }
