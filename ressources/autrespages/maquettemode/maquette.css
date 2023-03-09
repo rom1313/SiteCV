@@ -1,3 +1,4 @@
+/* todo-------------------------------------------------------------- Animations ---------- */
 @keyframes apparitiontxt {
     from {
         color: transparent;
@@ -31,37 +32,30 @@
     }
 }
 
-@keyframes apparitionimg3 {
-    from {
-        opacity: 0;
-
-    }
-
-    to {
-        opacity: 1;
-
-    }
-}
-
-body {
-    background-color: antiquewhite;
-    padding: 0%;
-
-    box-sizing: border-box;
-    margin: 0%;
-    display: block;
-    width: 100%;
-    height: 100%;
 
 
-}
 
+/* todo-------------------------------------------------------------- Basics config ---------- */
 html {
     margin: 0;
     padding: 0;
     user-select: none;
 
 }
+
+body {
+    background-color: antiquewhite;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* todo-------------------------------------------------------------- MENU ---------- */
 
 ul {
     display: flex;
@@ -79,7 +73,6 @@ li {
 }
 
 li:hover {
-    background-color: red;
 
     /* Create the gradient. */
     background-image: linear-gradient(45deg, #ffc53c, #d95d05);
@@ -111,96 +104,24 @@ input {
     column-gap: 1vw;
 }
 
-#blockimg {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100vh;
-    margin-top: 10vh;
-
-
-
-
-
-
-    height: 100vh;
-    width: 95vw;
-
-
-
-
-
-
-}
-
-footer {
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-.img {
-    transition: all 1s;
-    box-shadow: 0px 2px 5px black;
-    filter: grayscale(0.2);
-
-}
-
-.img:hover {
-
-    transform: scale(1.05, 1.05);
+.svg-icon {
     cursor: pointer;
-    filter: grayscale(0);
+    width: 2em;
+    height: 1.5em;
 
 }
 
-#img1 {
-    animation: apparitionimg1 1.5s linear;
-
-
-    position: relative;
-    width: 400px;
-    height: 80%;
-
-
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: rgb(0, 0, 0);
 }
 
-#img2 {
-    position: relative;
-    width: 400px;
-    height: 80%;
-    animation: apparitionimg1 1.5s linear;
-
-
-
+.svg-icon :hover {
+    fill: rgb(248, 137, 0);
 }
 
-#img3 {
-    position: relative;
-    width: 400px;
-    height: 80%;
-    animation: apparitionimg1 1.5s linear;
-
-
-
-}
-
-/* #img3 {
-    animation: apparitionimg3 1.5s ease 1;
-
-} */
-
-
-
-
+/* todo-------------------------------------------------------------- TITRE ET LOGO ---------- */
 #titre {
     font-size: 3.5vw;
     position: absolute;
@@ -238,40 +159,6 @@ footer {
 
 }
 
-.svg-icon {
-    cursor: pointer;
-    width: 2em;
-    height: 1.5em;
-  
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-    fill: rgb(0, 0, 0);
-}
-
-.svg-icon :hover {
-    fill: rgb(248, 137, 0);
-}
-
-
-
-
-
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    max-width: 110%;
-    border-radius: 15px;
-
-
-
-
-}
-
 #logo {
     position: absolute;
     top: 7%;
@@ -281,3 +168,171 @@ footer {
     width: 5%;
 
 }
+
+/* todo-------------------------------------------------------------- Block IMG ---------- */
+
+#blockimg {
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    margin-top: 10vh;
+
+    width: 95vw;
+}
+
+.img {
+
+    transition: all 1s;
+    filter: grayscale(0.2);
+    position: relative;
+    animation: apparitionimg1 1.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 150%;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+
+
+}
+
+.img:hover {
+
+
+    filter: grayscale(0);
+
+}
+
+#img1,
+#img2,
+#img3 {
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+#img1coeur,
+#img2coeur,
+#img3coeur {
+
+    position: absolute;
+    font-size: 5vh;
+    top: 15%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    color: transparent;
+    text-shadow: 0 0 0 grey;
+    font-size: 5vh;
+    transition: all 1s;
+    cursor: pointer;
+
+
+    padding: 0;
+
+}
+
+#img1text,
+#img2text,
+#img3text {
+    transition: all 0.5s;
+    position: absolute;
+    color: aliceblue;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-shadow: 0px 0px 15px rgb(248, 91, 0);
+    font-size: 3vh;
+    background-color: black;
+    border-radius: 15px;
+    padding: 1px 5px 1px 5px;
+
+
+
+
+
+
+}
+
+
+
+/* todo-------------------------------------------------------------- FOOTER ---------- */
+footer {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* todo-------------------------------------------------------------- Responsive ---------- */
+
+@media only screen and (min-height: 700px) {
+    .img {
+
+        border-radius: 15px;
+        width: 28vw;
+        height: 70vh;
+
+
+
+    }
+
+    #menu {
+        font-size: 2vh;
+    }
+}
+
+@media (min-height: 1090px) {}
+
+
+@media (min-height: 850px) {
+    .img {
+
+        border-radius: 15px;
+        width: 28vw;
+        height: 70vh;
+
+
+
+    }
+}
+
+/* todo------------------- Responsive tablette---------- */
+@media (min-height: 600px) and (max-width:1360px) {}
+
+/* todo------------------- Responsive phone---------- */
+
+@media (min-height: 300px) and (max-width:500px) {}
