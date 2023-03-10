@@ -32,6 +32,19 @@
     }
 }
 
+@keyframes disparition {
+    from {
+
+
+        opacity: 1;
+    }
+
+    to {
+
+        opacity: 0;
+    }
+}
+
 
 
 
@@ -61,11 +74,11 @@ ul {
     display: flex;
 
     width: max-content;
-    column-gap: 3vw;
+    column-gap: 2vw;
     list-style: none;
     font-size: 3vh;
     position: absolute;
-    left: 0px;
+    left: 1vw;
 }
 
 li {
@@ -73,7 +86,7 @@ li {
 }
 
 li:hover {
-
+    text-decoration: underline;
     /* Create the gradient. */
     background-image: linear-gradient(45deg, #ffc53c, #d95d05);
 
@@ -98,11 +111,35 @@ input {
 #menu {
     position: absolute;
     top: 5%;
-    left: 90%;
+    left: 85%;
     transform: translate(-50%, -50%);
     display: flex;
-    column-gap: 1vw;
+    column-gap: 1.2vw;
+
 }
+
+
+
+input {
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: 0;
+    border-radius: 0.3vw;
+    background-color: rgb(154, 142, 127);
+    color: antiquewhite;
+    font-size: 2vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: antiquewhite;
+}
+
+
 
 .svg-icon {
     cursor: pointer;
@@ -198,7 +235,8 @@ input {
     align-items: center;
     margin: auto;
     max-width: 150%;
-    border-radius: 15px;
+
+
     width: fit-content;
     height: fit-content;
     overflow: hidden;
@@ -218,10 +256,13 @@ input {
 #img1,
 #img2,
 #img3 {
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 100%;
 
+
 }
+
 
 #img1coeur,
 #img2coeur,
@@ -249,15 +290,15 @@ input {
 #img3text {
     transition: all 0.5s;
     position: absolute;
-    color: aliceblue;
+    color: white;
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    text-shadow: 0px 0px 15px rgb(248, 91, 0);
-    font-size: 3vh;
+   box-shadow: 0px 0px 10px antiquewhite;
+    font-size: 3.5vh;
     background-color: black;
-    border-radius: 15px;
+    border-radius: 3px;
     padding: 1px 5px 1px 5px;
 
 
@@ -275,6 +316,20 @@ footer {
     top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgb(154, 142, 127);
+    width: 100%;
+    height: 14vh;
+}
+
+#infosite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vh;
+    margin: 0;
+    color: antiquewhite;
+
 }
 
 
