@@ -3,15 +3,15 @@
 // todo -------------------------- Variables -----------------------------------
 const genius = $;
 const input = document.querySelector("input");
+let ulmenu = false
 
-let inputfocus = false
 // todo -------------------------- Event img -----------------------------------
 document.querySelectorAll(".img").forEach(element => {
     let idtext = element.children[1].id
     let idcoeur = element.children[2].id
     let idimg = element.children[0].id
-    let idimgindice = genius.recupnb(idimg)
-    
+
+
     element.addEventListener("mouseover", (e) => {
         document.querySelector(`#${idtext}`).style.opacity = 1
         document.querySelector(`#${idcoeur}`).style.opacity = 1
@@ -32,7 +32,7 @@ document.querySelectorAll(".coeur").forEach(element => {
     })
 });
 // todo -------------------------- Event input -----------------------------------
-input.addEventListener('input', (e) => { })
+
 
 input.onkeydown = (e) => {
     if (e.code === "Enter") {
@@ -43,7 +43,21 @@ input.onkeydown = (e) => {
 genius.event('#svgsearch', 'click', (e) => {
     recherche()
 })
+// todo -------------------------- Event MENU PAD-----------------------------------
+genius.event('#ulmenu', 'click', (e) => {
 
+    document.querySelector("ul").style.display = "flex"
+    document.querySelector("ul").focus()
+    ulmenu = true
+})
+
+
+document.querySelector("ul").addEventListener("focusout", () => {
+    if (ulmenu) {
+        document.querySelector("ul").style.display = "none"
+    }
+
+})
 
 // todo -------------------------- Fonction -----------------------------------
 
