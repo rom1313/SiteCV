@@ -330,7 +330,7 @@ input::placeholder {
     width: 50vh;
     position: absolute;
     background-color: black;
-    top: 140%;
+    top: 135%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-top-left-radius: 9vh 8vh;
