@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "versace";
+    src: url("./Routtage.ttf");
+}
+
 /* todo-------------------------------------------------------------- Animations ---------- */
 @keyframes apparitiontxt {
     from {
@@ -28,7 +33,7 @@
 
     to {
 
-        filter: grayscale(0.2)
+        filter: grayscale(0.4)
     }
 }
 
@@ -72,7 +77,7 @@ body {
 
 ul {
     display: flex;
-
+    color: rgb(117, 108, 98);
     width: max-content;
     column-gap: 2vw;
     list-style: none;
@@ -83,19 +88,15 @@ ul {
 
 li {
     cursor: pointer;
+
 }
 
 li:hover {
-    text-decoration: underline;
-    /* Create the gradient. */
-    background-image: linear-gradient(45deg, #ffc53c, #d95d05);
 
-    /* Set the background size and repeat properties. */
+
+    background-image: linear-gradient(45deg, #ffc53c, #d95d05);
     background-size: 100%;
     background-repeat: repeat;
-
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -160,6 +161,7 @@ input::placeholder {
 
 /* todo-------------------------------------------------------------- TITRE ET LOGO ---------- */
 #titre {
+
     font-size: 3.5vw;
     position: absolute;
     top: 20%;
@@ -171,7 +173,9 @@ input::placeholder {
 }
 
 #titre span {
-
+    font-size: 3.8vw;
+    padding: 10px;
+    font-family: "versace";
     background-color: red;
 
     /* Create the gradient. */
@@ -227,7 +231,7 @@ input::placeholder {
 .img {
 
     transition: all 1s;
-    filter: grayscale(0.2);
+    filter: grayscale(0.4);
     position: relative;
     animation: apparitionimg1 1.5s linear;
     display: flex;
@@ -249,6 +253,7 @@ input::placeholder {
 .img:hover {
 
 
+
     filter: grayscale(0);
 
 }
@@ -259,6 +264,8 @@ input::placeholder {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
+
+
 
 
 }
@@ -295,12 +302,14 @@ input::placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-   box-shadow: 0px 0px 10px antiquewhite;
+    box-shadow: 0px 0px 10px antiquewhite;
     font-size: 3.5vh;
     background-color: black;
-    border-radius: 3px;
-    padding: 1px 5px 1px 5px;
-
+   
+    padding: 0px 1vh 0.8vh 1vh;
+    font-family: "versace";
+    border-top-left-radius: 2vh 2vh;
+    border-bottom-right-radius:15px 15px;
 
 
 
@@ -309,11 +318,66 @@ input::placeholder {
 }
 
 
+#offre {
+    transition: all 0.4s ease-in-out;
+    height: 25vh;
+    width: 50vh;
+    position: absolute;
+    background-color: black;
+    top: 142%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  border-top-left-radius: 9vh 8vh;
+    border-bottom-right-radius: 9vh 8vh;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#offre:hover {
+  
+    box-shadow: 0.8vh 0.5vh 0.4vh rgb(154, 142, 127);;
+    translate: -1px -1px;
+
+}
+
+#offre p {
+    margin: 0;
+    font-family: "versace";
+
+}
+
+#soldes {
+
+
+    font-size: 7vh;
+    background-image: linear-gradient(45deg, #ffc53c, #d95d05);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding: 5px;
+}
+
+#offres {
+    color: antiquewhite;
+}
+
+#offres:hover {
+    text-shadow: 0px 0px 10px #ffc53c;
+    cursor: pointer;
+}
+
 
 /* todo-------------------------------------------------------------- FOOTER ---------- */
 footer {
     position: absolute;
-    top: 150%;
+    top: 170%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(154, 142, 127);
@@ -326,10 +390,60 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3vh;
+    font-size: 5vh;
     margin: 0;
     color: antiquewhite;
+    font-family: "versace";
 
+}
+
+#tel {
+    position: absolute;
+    font-size: 3vh;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+}
+
+#blocksocial {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    column-gap: 0.7vw;
+    color: antiquewhite;
+}
+
+#blocksocial img {
+    width: 2vw;
+}
+
+#blockpaiement {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    column-gap: 0.8vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#blockpaiement img {
+    border: solid 0.5px antiquewhite;
+
+    width: 4vh;
+    border-radius: 5px;
+}
+
+#blockpaiement p {
+    margin-right: 10px;
+    color: antiquewhite;
 }
 
 
