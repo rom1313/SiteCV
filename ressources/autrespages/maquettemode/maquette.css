@@ -51,728 +51,728 @@
 }
 
 
-  
 
 
 
 
-    /* todo-------------------------------------------------------------- Basics config ---------- */
-    html {
-        margin: 0;
-        padding: 0;
-        user-select: none;
 
-    }
+/* todo-------------------------------------------------------------- Basics config ---------- */
+html {
+    margin: 0;
+    padding: 0;
+    user-select: none;
 
-    body {
-        background-color: antiquewhite;
-        padding: 0%;
-        box-sizing: border-box;
-        margin: 0%;
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+}
 
-
-
-    /* todo-------------------------------------------------------------- MENU ---------- */
-
-    ul {
-        display: flex;
-        color: rgb(117, 108, 98);
-        width: max-content;
-        column-gap: 1.9vw;
-        list-style: none;
-        font-size: 2.9vh;
-        position: absolute;
-        left: 1vw;
-        flex-direction: row;
-    }
-
-    #ulmenu {
-        display: none;
-
-    }
-
-    li {
-        cursor: pointer;
-
-    }
-
-    li:hover {
-
-
-        background-image: linear-gradient(45deg, #ffc53c, #d95d05);
-        background-size: 100%;
-        background-repeat: repeat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-    }
+body {
+    background-color: antiquewhite;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 
 
+/* todo-------------------------------------------------------------- MENU ---------- */
 
-    #menu {
-        position: absolute;
-        top: 5%;
-        left: 83%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        column-gap: 1.2vw;
+ul {
+    display: flex;
+    color: rgb(117, 108, 98);
+    width: max-content;
+    column-gap: 1.9vw;
+    list-style: none;
+    font-size: 2.9vh;
+    position: absolute;
+    left: 1vw;
+    flex-direction: row;
+}
 
-    }
+#ulmenu {
+    display: none;
 
+}
 
+li {
+    cursor: pointer;
 
-    input {
-        width: 11vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        border: 0;
-        border-radius: 0.3vw;
-        background-color: rgb(154, 142, 127);
-        color: antiquewhite;
-        font-size: 2vh;
-    }
+}
 
-    input:focus {
-        outline: none;
-    }
-
-    input::placeholder {
-        color: antiquewhite;
-    }
+li:hover {
 
 
+    background-image: linear-gradient(45deg, #ffc53c, #d95d05);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
 
-    .svg-icon {
-        cursor: pointer;
-        width: 2em;
-        height: 1.5em;
 
-    }
 
-    .svg-icon path,
-    .svg-icon polygon,
-    .svg-icon rect {
-        fill: rgb(0, 0, 0);
-    }
 
-    .svg-icon :hover {
-        fill: rgb(248, 137, 0);
-    }
+#menu {
+    position: absolute;
+    top: 5%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    column-gap: 1.2vw;
 
-    /* todo-------------------------------------------------------------- TITRE ET LOGO ---------- */
+}
+
+
+
+input {
+    width: 11vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: 0;
+    border-radius: 0.3vw;
+    background-color: rgb(154, 142, 127);
+    color: antiquewhite;
+    font-size: 2vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: antiquewhite;
+}
+
+
+
+.svg-icon {
+    cursor: pointer;
+    width: 2em;
+    height: 1.5em;
+
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: rgb(0, 0, 0);
+}
+
+.svg-icon :hover {
+    fill: rgb(248, 137, 0);
+}
+
+/* todo-------------------------------------------------------------- TITRE ET LOGO ---------- */
+#titre {
+
+    font-size: 3.5vw;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+#titre span {
+    font-size: 3.8vw;
+    padding: 10px;
+    font-family: "versace";
+    background-color: red;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #ffc53c, #d95d05);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#titre span:hover {
+
+    color: transparent;
+
+
+}
+
+#logo {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 5vw;
+
+}
+
+/* todo-------------------------------------------------------------- Block IMG ---------- */
+
+#blockimg {
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+
+    width: 95vw;
+}
+
+.img {
+
+    transition: all 1s;
+    filter: grayscale(0.4);
+    position: relative;
+    animation: apparitionimg1 1.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 150%;
+
+
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+
+
+}
+
+.img:hover {
+    translate: -0vh -1vh;
+
+    filter: grayscale(0);
+
+}
+
+#img1,
+#img2,
+#img3 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100vw;
+
+
+
+
+}
+
+
+
+#img1coeur,
+#img2coeur,
+#img3coeur {
+
+    position: absolute;
+    font-size: 5vh;
+    top: 15%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    color: transparent;
+    text-shadow: 0 0 0 grey;
+    font-size: 5vh;
+    transition: all 1s;
+    cursor: pointer;
+    opacity: 0;
+
+    padding: 0;
+
+}
+
+#img1text,
+#img2text,
+#img3text {
+    transition: all 0.5s;
+    position: absolute;
+    color: white;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    box-shadow: 0px 0px 10px antiquewhite;
+    font-size: 3.5vh;
+    background-color: black;
+
+    padding: 0px 1vh 0.8vh 1vh;
+    font-family: "versace";
+    border-top-left-radius: 2vh 2vh;
+    border-bottom-right-radius: 15px 15px;
+    opacity: 0;
+
+
+
+
+}
+
+
+#offre {
+    transition: all 0.4s ease-in-out;
+    height: 25vh;
+    width: 50vh;
+    position: absolute;
+    background-color: black;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 9vh 8vh;
+    border-bottom-right-radius: 9vh 8vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#offre:hover {
+
+    box-shadow: 0.8vh 0.5vh 0.4vh rgb(154, 142, 127);
+    ;
+    translate: -1px -1px;
+
+}
+
+#offre p {
+    margin: 0;
+    font-family: "versace";
+
+}
+
+#soldes {
+
+
+    font-size: 7vh;
+    background-image: linear-gradient(45deg, #ffc53c, #d95d05);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding: 5px;
+}
+
+#offres {
+    color: antiquewhite;
+}
+
+#offres:hover {
+    text-shadow: 0px 0px 10px #ffc53c;
+    cursor: pointer;
+}
+
+
+/* todo-------------------------------------------------------------- FOOTER ---------- */
+footer {
+    margin-top: 8vw;
+    position: absolute;
+    top: 150vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(154, 142, 127);
+    width: 100%;
+    height: 14vh;
+}
+
+#infosite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    margin: 0;
+    color: antiquewhite;
+    font-family: "versace";
+
+}
+
+#tel {
+    position: absolute;
+    font-size: 3vh;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+}
+
+#blocksocial {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    column-gap: 0vw;
+    color: antiquewhite;
+}
+
+#blocksocial img {
+    width: 2vw;
+}
+
+#blockpaiement {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    column-gap: 0.8vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#blockpaiement img {
+    border: solid 0.5px antiquewhite;
+
+    width: 4vh;
+    border-radius: 5px;
+}
+
+#blockpaiement p {
+    margin-right: 10px;
+    color: antiquewhite;
+}
+
+/* todo--------------------------------------------------------- */
+/* todo------------------------------------------------------------ SMALL---------- */
+/* todo--------------------------------------------------------- */
+/* todo--------------------------------------------------------- */
+
+
+
+
+
+/* todo--------------------------------------------------------- */
+/* todo------------------------------------------------------------ Tablette---------- */
+/* todo--------------------------------------------------------- */
+/* todo--------------------------------------------------------- */
+@media only screen and (min-width: 600px)and (max-width:1024px) {
+
     #titre {
-
-        font-size: 3.5vw;
-        position: absolute;
-        top: 22%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-
-
+        top: 50vw;
+        font-size: 6vw;
+        width: 100vw;
+        text-align: center;
     }
 
     #titre span {
-        font-size: 3.8vw;
-        padding: 10px;
-        font-family: "versace";
-        background-color: red;
-
-        /* Create the gradient. */
-        background-image: linear-gradient(45deg, #ffc53c, #d95d05);
-
-        /* Set the background size and repeat properties. */
-        background-size: 100%;
-        background-repeat: repeat;
-
-        /* Use the text as a mask for the background. */
-        /* This will show the gradient as a text color rather than element bg. */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-    }
-
-    #titre span:hover {
-
-        color: transparent;
-
-
+        font-size: 7vw;
     }
 
     #logo {
+        width: 25vw;
+        top: 30vw;
+    }
+
+    #ulmenu {
         position: absolute;
-        top: 8%;
-        left: 50%;
+        display: flex;
+        border-radius: 1vw;
+        top: 5%;
+        left: 8%;
         transform: translate(-50%, -50%);
-        z-index: 3;
-        width: 5vw;
+        background-color: rgb(154, 142, 127);
+        width: 10vw;
+        height: 10vW;
+        font-size: 12vw;
+        justify-content: center;
+        align-items: center;
 
     }
 
-    /* todo-------------------------------------------------------------- Block IMG ---------- */
+    #menu {
+        left: 60vw;
+        top: 4%;
+    }
+
+    input {
+
+        width: 38vw;
+        margin-right: 1vw;
+    }
+
+    .svg-icon {
+
+        width: 3.56em;
+        height: 2em;
+
+    }
+
+    ul {
+        display: none;
+        transition: all 0.5s ease-in;
+        border-radius: 2%;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: #000000;
+        padding: 0;
+        flex-direction: column;
+        width: 100vw;
+        row-gap: 5vw;
+        height: fit-content;
+        z-index: 6;
+        font-size: 10vw;
+    }
 
     #blockimg {
-
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        
-
+        top: 220vw;
+        flex-direction: column;
+        row-gap: 3vw;
         width: 95vw;
-    }
 
-    .img {
-
-        transition: all 1s;
-        filter: grayscale(0.4);
-        position: relative;
-        animation: apparitionimg1 1.5s linear;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        max-width: 150%;
-
-
-        width: fit-content;
-        height: fit-content;
-        overflow: hidden;
-        margin-left: 0.5vw;
-        margin-right: 1vw;
-
-
-    }
-
-    .img:hover {
-        translate: -0vh -1vh;
-
-        filter: grayscale(0);
 
     }
 
     #img1,
     #img2,
     #img3 {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        width: 100vw;
-
-
-
-
+        width: 80vw;
     }
 
-
-
-    #img1coeur,
-    #img2coeur,
-    #img3coeur {
-
-        position: absolute;
-        font-size: 5vh;
-        top: 15%;
-        left: 85%;
-        transform: translate(-50%, -50%);
-        z-index: 9;
-        color: transparent;
-        text-shadow: 0 0 0 grey;
-        font-size: 5vh;
-        transition: all 1s;
-        cursor: pointer;
-
-
-        padding: 0;
-
+    footer {
+        margin-top: 5vw;
+        top: 430vw;
     }
-
-    #img1text,
-    #img2text,
-    #img3text {
-        transition: all 0.5s;
-        position: absolute;
-        color: white;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-        box-shadow: 0px 0px 10px antiquewhite;
-        font-size: 3.5vh;
-        background-color: black;
-
-        padding: 0px 1vh 0.8vh 1vh;
-        font-family: "versace";
-        border-top-left-radius: 2vh 2vh;
-        border-bottom-right-radius: 15px 15px;
-
-
-
-
-
-    }
-
 
     #offre {
-        transition: all 0.4s ease-in-out;
-        height: 25vh;
-        width: 50vh;
-        position: absolute;
-        background-color: black;
-        top: 140%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-top-left-radius: 9vh 8vh;
-        border-bottom-right-radius: 9vh 8vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    #offre:hover {
-
-        box-shadow: 0.8vh 0.5vh 0.4vh rgb(154, 142, 127);
-        ;
-        translate: -1px -1px;
-
-    }
-
-    #offre p {
-        margin: 0;
-        font-family: "versace";
-
+        top: 400vw;
+        width: 60vw;
+        height: 30vw;
+        margin-top: 2vw;
     }
 
     #soldes {
-
-
-        font-size: 7vh;
-        background-image: linear-gradient(45deg, #ffc53c, #d95d05);
-        background-size: 100%;
-        background-repeat: repeat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        padding: 5px;
-    }
-
-    #offres {
-        color: antiquewhite;
-    }
-
-    #offres:hover {
-        text-shadow: 0px 0px 10px #ffc53c;
-        cursor: pointer;
-    }
-
-
-    /* todo-------------------------------------------------------------- FOOTER ---------- */
-    footer {
-        margin-top: 8vw;
-        position: absolute;
-        top: 150vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgb(154, 142, 127);
-        width: 100%;
-        height: 14vh;
-    }
-
-    #infosite {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5vh;
-        margin: 0;
-        color: antiquewhite;
-        font-family: "versace";
-
-    }
-
-    #tel {
-        position: absolute;
-        font-size: 3vh;
-        top: 45%;
-        left: 10%;
-        transform: translate(-50%, -50%);
-        color: antiquewhite;
-    }
-
-    #blocksocial {
-        position: absolute;
-        top: 35%;
-        left: 10%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        column-gap: 0vw;
-        color: antiquewhite;
-    }
-
-    #blocksocial img {
-        width: 2vw;
+        font-size: 10vw;
     }
 
     #blockpaiement {
-        position: absolute;
-        top: 50%;
-        left: 90%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        column-gap: 0.8vw;
-        height: fit-content;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        row-gap: 1vw;
+        left: 18%;
+        top: 83%;
 
 
     }
 
     #blockpaiement img {
-        border: solid 0.5px antiquewhite;
 
-        width: 4vh;
-        border-radius: 5px;
+
+        width: 4vw;
+
     }
 
     #blockpaiement p {
-        margin-right: 10px;
-        color: antiquewhite;
+
+
+        font-size: 2vw;
+        margin: 0;
+
     }
 
-    /* todo--------------------------------------------------------- */
-    /* todo------------------------------------------------------------ SMALL---------- */
-    /* todo--------------------------------------------------------- */
-    /* todo--------------------------------------------------------- */
+    #tel {
+        font-size: 3.5vw;
+        left: 12%;
+        top: 30%;
+    }
+
+    #blocksocial img {
+        width: 6vw;
+
+    }
+
+    #blocksocial {
+        top: 25%;
+        left: 12%;
+    }
+
+    #infosite {
+        top: 35%;
+        font-size: 7.2vw;
+    }
 
 
 
-   
+}
 
-    /* todo--------------------------------------------------------- */
-    /* todo------------------------------------------------------------ Tablette---------- */
-    /* todo--------------------------------------------------------- */
-    /* todo--------------------------------------------------------- */
-    @media only screen and (min-width: 600px)and (max-width:1024px) {
+/* todo--------------------------------------------------------- */
+/* todo------------------------------------------------------------ PHONE ---------- */
+/* todo--------------------------------------------------------- */
+/* todo--------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
 
-        #titre {
-            top: 50vw;
-            font-size: 6vw;
-            width: 100vw;
-            text-align: center;
-        }
+    #infosite {
+        font-size: 5vw;
+    }
 
-        #titre span {
-            font-size: 7vw;
-        }
+    #titre {
+        top: 50vw;
+        font-size: 6vw;
+        width: 100vw;
+        text-align: center;
+    }
 
-        #logo {
-            width: 25vw;
-            top: 30vw;
-        }
+    #titre span {
+        font-size: 7vw;
+    }
 
-        #ulmenu {
-            position: absolute;
-            display: flex;
-            border-radius: 1vw;
-            top: 5%;
-            left: 8%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(154, 142, 127);
-            width: 10vw;
-            height: 10vW;
-            font-size: 12vw;
-            justify-content: center;
-            align-items: center;
+    ul {
+        display: none;
+        transition: all 0.5s ease-in;
+        border-radius: 2%;
+        position: absolute;
+        top: 11%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: #000000;
+        padding: 0;
+        flex-direction: column;
+        width: 100vw;
+        row-gap: 5vw;
+        height: fit-content;
+        z-index: 6;
+        font-size: 10vw;
+    }
 
-        }
+    #logo {
+        width: 25vw;
+        top: 30vw;
+    }
 
-        #menu {
-            left: 60vw;
-            top: 4%;
-        }
-
-        input {
-
-            width: 38vw;
-            margin-right: 1vw;
-        }
-
-        .svg-icon {
-
-            width: 3.56em;
-            height: 2em;
-
-        }
-
-        ul {
-            display: none;
-            transition: all 0.5s ease-in;
-            border-radius: 2%;
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            background-color: #000000;
-            padding: 0;
-            flex-direction: column;
-            width: 100vw;
-            row-gap: 5vw;
-            height: fit-content;
-            z-index: 6;
-            font-size: 10vw;
-        }
-
-        #blockimg {
-            top: 220vw;
-            flex-direction: column;
-            row-gap: 3vw;
-            width: 95vw;
-
-
-        }
-
-        #img1,
-        #img2,
-        #img3 {
-            width: 80vw;
-        }
-
-        footer {
-            margin-top: 5vw;
-            top: 430vw;
-        }
-
-        #offre {
-            top: 400vw;
-            width: 60vw;
-            height: 30vw;
-            margin-top: 2vw;
-        }
-
-        #soldes {
-            font-size: 10vw;
-        }
-
-        #blockpaiement {
-            flex-direction: row;
-            text-align: center;
-            row-gap: 1vw;
-            left: 18%;
-            top: 83%;
-
-
-        }
-
-        #blockpaiement img {
-
-
-            width: 4vw;
-
-        }
-
-        #blockpaiement p {
-
-
-            font-size: 2vw;
-            margin: 0;
-
-        }
-
-        #tel {
-            font-size: 3.5vw;
-            left: 12%;
-            top: 30%;
-        }
-
-        #blocksocial img {
-            width: 6vw;
-
-        }
-
-        #blocksocial {
-            top: 25%;
-            left: 12%;
-        }
-
-        #infosite {
-            top: 35%;
-            font-size: 7.2vw;
-        }
-
+    #blockimg {
+        top: 265vw;
+        flex-direction: column;
+        row-gap: 3vw;
 
 
     }
 
-    /* todo--------------------------------------------------------- */
-    /* todo------------------------------------------------------------ PHONE ---------- */
-    /* todo--------------------------------------------------------- */
-    /* todo--------------------------------------------------------- */
-    @media only screen and (max-width: 600px) {
-
-        #infosite {
-            font-size: 5vw;
-        }
-
-        #titre {
-            top: 50vw;
-            font-size: 6vw;
-            width: 100vw;
-            text-align: center;
-        }
-
-        #titre span {
-            font-size: 7vw;
-        }
-
-        ul {
-            display: none;
-            transition: all 0.5s ease-in;
-            border-radius: 2%;
-            position: absolute;
-            top: 11%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            background-color: #000000;
-            padding: 0;
-            flex-direction: column;
-            width: 100vw;
-            row-gap: 5vw;
-            height: fit-content;
-            z-index: 6;
-            font-size: 10vw;
-        }
-
-        #logo {
-            width: 25vw;
-            top: 30vw;
-        }
-
-        #blockimg {
-            top: 265vw;
-            flex-direction: column;
-            row-gap: 3vw;
-
-
-        }
-
-        #blockpaiement {
-            flex-direction: row;
-            text-align: center;
-            row-gap: 1vw;
-            left: 21%;
-            top: 83%;
-
-
-        }
-
-        #blockpaiement img {
-
-
-            width: 5vw;
-
-        }
-
-        #blockpaiement p {
-
-
-            font-size: 2.4vw;
-            margin: 0;
-
-        }
-
-        #tel {
-            font-size: 3.5vw;
-            left: 12%;
-            top: 30%;
-        }
-
-        #blocksocial img {
-            width: 6vw;
-
-        }
-
-        #blocksocial {
-            top: 20%;
-            left: 12%;
-        }
-
-        footer {
-            margin-top: 15vw;
-            top: 290%;
-        }
-
-        #offre {
-            top: 275%;
-            width: 70vw;
-            height: 45vw;
-            margin-top: 2vw;
-        }
-
-        #soldes {
-            font-size: 10vw;
-        }
-
-        #ulmenu {
-            position: absolute;
-            display: flex;
-            border-radius: 1vw;
-            top: 4%;
-            left: 8%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(154, 142, 127);
-            width: 10vw;
-            height: 10vW;
-            font-size: 12vw;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #menu {
-            left: 60vw;
-            top: 4%;
-        }
-
-        input {
-
-            width: 38vw;
-            margin-right: 1vw;
-        }
-
-        .svg-icon {
-
-            width: 1.5em;
-            height: 1.2em;
-
-        }
-
-        #infosite {
-            top: 40%;
-            font-size: 7.2vw;
-        }
-
-
-
-
-
-
+    #blockpaiement {
+        flex-direction: row;
+        text-align: center;
+        row-gap: 1vw;
+        left: 21%;
+        top: 83%;
 
 
     }
+
+    #blockpaiement img {
+
+
+        width: 5vw;
+
+    }
+
+    #blockpaiement p {
+
+
+        font-size: 2.4vw;
+        margin: 0;
+
+    }
+
+    #tel {
+        font-size: 3.5vw;
+        left: 12%;
+        top: 30%;
+    }
+
+    #blocksocial img {
+        width: 6vw;
+
+    }
+
+    #blocksocial {
+        top: 20%;
+        left: 12%;
+    }
+
+    footer {
+        margin-top: 15vw;
+        top: 290%;
+    }
+
+    #offre {
+        top: 275%;
+        width: 70vw;
+        height: 45vw;
+        margin-top: 2vw;
+    }
+
+    #soldes {
+        font-size: 10vw;
+    }
+
+    #ulmenu {
+        position: absolute;
+        display: flex;
+        border-radius: 1vw;
+        top: 4%;
+        left: 8%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(154, 142, 127);
+        width: 10vw;
+        height: 10vW;
+        font-size: 12vw;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #menu {
+        left: 60vw;
+        top: 4%;
+    }
+
+    input {
+
+        width: 38vw;
+        margin-right: 1vw;
+    }
+
+    .svg-icon {
+
+        width: 1.5em;
+        height: 1.2em;
+
+    }
+
+    #infosite {
+        top: 40%;
+        font-size: 7.2vw;
+    }
+
+
+
+
+
+
+
+
+}
