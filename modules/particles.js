@@ -1528,5 +1528,5 @@ var pJS = function(tag_id, params){
       }
     };
     xhr.send();
-  
+  return this
   };

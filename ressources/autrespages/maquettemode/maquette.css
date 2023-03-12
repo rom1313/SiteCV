@@ -258,7 +258,7 @@ input::placeholder {
 
 .img:hover {
     translate: -0vh -1vh;
-
+    -moz-translate: -0vh -1vh;
     filter: grayscale(0);
 
 }

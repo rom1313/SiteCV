@@ -9,6 +9,13 @@
     src: url("./ressources/pixelex.ttf");
 }
 
+@font-face {
+    font-family: "pixel2";
+    src: url("./ressources/Expo-Bold.otf");
+}
+
+
+
 
 /* todo------------------- ANIMATIONS ---------- */
 @keyframes clignotement {
@@ -59,7 +66,7 @@
 
     to {
         color: rgb(255, 255, 255);
-        text-shadow: 0px 0px 0px;
+
         filter: drop-shadow(0px 0px 2px aqua);
     }
 
@@ -71,7 +78,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "pixel";
+    font-family: "pixel2";
 }
 
 html {
@@ -83,7 +90,7 @@ html {
     background-position: center;
     object-fit: contain;
     cursor: url('./ressources/img/mouse.png'), default;
-    text-rendering: optimizeSpeed;
+  
 
 }
 
@@ -121,7 +128,8 @@ p {
     animation: clignotement 0.8s 3 alternate ease-in-out;
     border-radius: 200%;
     width: 12%;
-    box-shadow: rgba(0, 255, 255, 0.223) 0px 3px 30px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 255, 255, 0.327));
+
 
 
 
@@ -156,7 +164,7 @@ li {
     box-shadow: 0px 0px 5px rgb(0, 232, 228);
     border-radius: 15px;
     text-align: center;
-    padding: 5px 7px 5px 7px;
+    padding: 5px 15px 5px 15px;
     font-size: 1.3vw;
     color: white;
     cursor: url('./ressources/img/mouse2.png'), pointer;
@@ -190,7 +198,7 @@ li:hover {
 
     text-align: center;
     width: 60vw;
-    height: 60vh;
+    height: 65vh;
     border-radius: 0px 100px / 150px;
     scrollbar-width: none;
     z-index: 6;
@@ -206,7 +214,7 @@ li:hover {
 
 #contenupagehtml p {
 
-    animation: clignotement 1s 1 ease-in;
+    animation: clignotement 0.4s ease-in-out;
     color: rgb(255, 255, 255)
 }
 
@@ -251,68 +259,30 @@ li:hover {
     position: absolute;
     margin-left: 15px;
     margin-top: -1.5vh;
+    filter: drop-shadow(0px 0px 5px rgb(130, 22, 0));
 }
 
 /* todo------------------- CREATIONS ---------- */
 
-#blockcreations {
-    margin-top: 30px;
-
-    display: flex;
-}
-
-#blockcreations div {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10px;
-    width: fit-content;
-    cursor: url('./ressources/img/mouse2.png'), pointer;
-    text-align: center;
-    padding: 0px 5px 0px 8px;
-    box-shadow: 0px 0px 2px black;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    transition: box-shadow, background-color, color, 0.3s ease;
-    height: 5vh;
-    animation: clignotement 1s ease-in linear;
-    box-shadow: 0px 0px 3px aqua;
-
-    text-shadow: 0px 0px 2px black;
-}
-
-#blockcreations div:hover {
-
-    text-shadow: 0PX 0PX 2px black;
-    box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.669);
-    color: aqua;
-    animation: 0;
-}
-
-#blockcreations h2 {
 
 
-
-    font-size: 22px;
-}
 
 
 
 
 .imgpixel {
-    box-shadow: 0.5px 0.5px 6px aqua;
-    animation: clignotement 0.5s 1 ease;
-    z-index: 3;
+    filter: drop-shadow(0px 0px 5px aqua);
+    box-shadow: 0px 0px 2px aqua;
     position: absolute;
     width: 50%;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     pointer-events: none;
-
+    border: solid 1px rgb(0, 255, 225);
+    z-index: 3;
+    animation: clignotement 0.5s;
 
     /*     animation: clignotement 0.8s 1 linear;
  */
@@ -320,9 +290,9 @@ li:hover {
 
 
 
-.imgpixelanimation {
-    animation: clignotement 1s 1 ease-in;
-}
+
+
+
 
 
 
@@ -359,9 +329,10 @@ li:hover {
     transform: translate(-50%, 50%);
     width: 100%;
     padding: 7px;
+    transition: all 1s;
 
 
-    animation: clignotement 1s 1 ease-in
+    
 }
 
 .lien {
@@ -373,21 +344,9 @@ li:hover {
     color: aqua;
 }
 
-#retourcreations {
 
-    z-index: 10;
-    position: absolute;
-    
-    
-    font-size: 5vh;
-}
 
-#blockimgpixel {
-    display: flex;
-    z-index: 6;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* todo------------------- CONTACT ---------- */
 #infocontact {
@@ -399,7 +358,7 @@ li:hover {
 
 #mailcopie,
 #telcopie {
-
+    filter: drop-shadow(0px 0px 1px aqua);
     margin-left: 15px;
     position: absolute;
     width: 17px;
@@ -433,7 +392,7 @@ li:hover {
 
 
     column-gap: 5px;
-    cursor: url('./ressources/img/mouse2.png'), pointer;
+
 
 
 }
@@ -464,7 +423,7 @@ li:hover {
 @media only screen and (min-height: 800px) {
     #contenupagehtml h1 {
 
-        padding-top: 5%;
+        padding-top: 0%;
     }
 }
 

@@ -4,6 +4,7 @@
 
 import { changerpage, blockpixelfunc } from "./modules/fonctions.js"
 import { recits, imagespixelart, son, descriptiontext } from "./modules/variables.js"
+
 export const genius = $
 
 // todo -------------------------- MAIN -----------------------------------
@@ -85,22 +86,17 @@ genius.event("#creations", "click", () => {
 
 
 // todo-------- events genius powered
-genius.event("#infosite", "click", () => {
 
-    window.open("https://www.npmjs.com/package/@rom13/genius-browser")
-
-
-})
 
 
 // todo -------------------------- EVENTS GLOBAL -----------------------------------
 
 
 onload = () => {
-    particlesJS.load('particles', 'json.json')
+
+     particlesJS.load('particles', 'json.json')
+    
    
-
-
 
 
 }

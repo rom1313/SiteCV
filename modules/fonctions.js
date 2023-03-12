@@ -47,57 +47,55 @@ export function changerpage(page, element) {
 export function blockpixelfunc() {
 
     // todo-------- events blockpixelart
-    genius.event("#blockpixelart", "click", () => {
+
+    son.boutton.volume = 0.1
+    son.boutton.play()
+    let img = genius.element("img", ".imgpixel")
+    let div = genius.element("div", "#blockimgpixel")
+
+    contenupagehtml.appendChild(div)
+    div.appendChild(img)
+    /*    div.appendChild(p) */
+
+    img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
+    document.querySelector("#flechegauchepixel").classList.remove("invisible")
+    document.querySelector("#flechedroitepixel").classList.remove("invisible")
+
+    document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
+
+    genius.event("#flechegauchepixel", "click", () => {
+
         son.boutton.volume = 0.1
         son.boutton.play()
-        blockcreations.style.opacity = 0
-        blockcreations.style.pointerEvents = "none"
-        let p = genius.element("p", "#retourcreations")
-        p.textContent = "↩"
-        let img = genius.element("img", ".imgpixel")
-        let div = genius.element("div", "#blockimgpixel")
-        contenupagehtml.appendChild(div)
-     /*    div.appendChild(p) */
-        div.appendChild(img)
-        img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
-        document.querySelector("#flechegauchepixel").classList.remove("invisible")
-        document.querySelector("#flechedroitepixel").classList.remove("invisible")
 
-        document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
-        document.querySelector("#descriptionpixel").classList.remove("invisible")
-        genius.event("#flechegauchepixel", "click", () => {
+        if (countfleche.value != 0) {
 
-            son.boutton.volume = 0.1
-            son.boutton.play()
+            countfleche.value--
 
-            if (countfleche.value != 0) {
+            document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
+            img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
 
-                countfleche.value--
-
-                document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
-                img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
-               
-                lien()
-            }
-            else { return }
-        })
-        genius.event("#flechedroitepixel", "click", () => {
-
-            son.boutton.volume = 0.1
-            son.boutton.play()
-            if (countfleche.value < imagespixelart.length - 1) {
-                countfleche.value++
-                document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
-                img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
-                
-                lien()
-            }
-            else { return }
-        })
-        lien()
-
-
+            lien()
+        }
+        else { }
     })
+    genius.event("#flechedroitepixel", "click", () => {
+
+        son.boutton.volume = 0.1
+        son.boutton.play()
+        if (countfleche.value < imagespixelart.length - 1) {
+            countfleche.value++
+            document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
+            img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
+
+            lien()
+        }
+        else { }
+    })
+    lien()
+
+
+
 }
 
 // todo --------------------------------------------------- Liens func --------------------------
