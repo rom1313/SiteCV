@@ -6,9 +6,9 @@ export const recits =
     { titre: "Design", img: "./ressources/img/technos/art.png" },
     ]
 
-export const descriptiontext = [`Parc Fictif (Serveur et BDD down) <span class="lien">Lien<span/>`, `StarWars Wiki (Api + Traduction) <span class="lien">Lien<span/>`, `Jeu Desktop (avec socket.io + Phaser)<span class="lien"><span/>`, `Librairie NPM <span class="lien">Lien<span/>`]
+export const descriptiontext = [`Site parc (Premier site) <span class="lien">Lien<span/>`, `Site Mode (maquette) <span class="lien">Lien<span/>`, `Jeu Desktop (socket.io + PhaserJS)<span class="lien"><span/>`, `Librairie NPM <span class="lien">Lien<span/>`, `Appli Wiki StarWars <span class="lien">Lien<span/>`]
 
-export const imagespixelart = ["./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png"]
+export const imagespixelart = ["./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png", "./ressources/img/pixelart/1.png"]
 
 export const son =
 {

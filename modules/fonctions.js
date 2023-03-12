@@ -110,7 +110,7 @@ function lien() {
     }
     else if (countfleche.value === 1) {
         genius.event(".lien", "click", () => {
-            window.open("https://starwarsworld.netlify.app")
+            window.open("https://cv-rom.herokuapp.com/mode")
         })
 
     }
@@ -121,9 +121,12 @@ function lien() {
         genius.event(".lien", "click", () => {
             window.open("https://www.npmjs.com/package/@rom13/genius")
         })
-
     }
-
+    else if (countfleche.value === 4) {
+        genius.event(".lien", "click", () => {
+            window.open("https://starwarsworld.netlify.app")
+        })
+    }
 
 
 }
