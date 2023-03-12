@@ -37,7 +37,7 @@ genius.event("#contact", "click", () => {
     // todo-------- mail contact
     genius.event("#mailcopie", "click", (e) => {
         son.boutton.volume = 0.1
-        son.boutton.play()
+        son.boutton2.play()
 
         let p = genius.element("p", "#textecopie")
         genius.textContent("copié", "#textecopie")
@@ -53,7 +53,7 @@ genius.event("#contact", "click", () => {
     // todo-------- tel contact
     genius.event("#telcopie", "click", (e) => {
         son.boutton.volume = 0.1
-        son.boutton.play()
+        son.boutton2.play()
         let p = genius.element("p", "#textecopie")
         genius.textContent("copié", "#textecopie")
         p.style.left = e.clientX + 20 + "px"

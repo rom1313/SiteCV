@@ -13,4 +13,5 @@ export const imagespixelart = ["./ressources/img/pixelart/1.png", "./ressources/
 export const son =
 {
     boutton: new Audio("../ressources/sons/boutton.mp3"),
+    boutton2: new Audio("../ressources/sons/boutton3.mp3")
 }
