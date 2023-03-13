@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="118.16587mm"
+   height="115.36573mm"
+   viewBox="0 0 118.16587 115.36573"
+   version="1.1"
+   id="svg307"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="logosite.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview309"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.46769781"
+     inkscape:cx="268.33566"
+     inkscape:cy="222.3658"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs304">
+    <linearGradient
+       id="linearGradient3370"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="0"
+         id="stop3368" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3255"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3253" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1194"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1192" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3255"
+       id="linearGradient3372"
+       x1="26.620342"
+       y1="103.27961"
+       x2="141.98607"
+       y2="103.27961"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0242719,0,0,1,-2.2462073,0.40002041)" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.02026,-45.996761)">
+    <ellipse
+       style="font-variation-settings:'wdth' 87, 'wght' 600;fill:url(#linearGradient3372);fill-opacity:1;stroke:none;stroke-width:7.04092;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path480"
+       cx="84.103195"
+       cy="103.67963"
+       rx="59.082935"
+       ry="57.682865" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:106.043px;font-family:'Bell MT';-inkscape-font-specification:'Bell MT, @wght=600,wdth=87.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 87, 'wght' 600;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12.4362;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="50.257839"
+       y="133.41843"
+       id="text3428"
+       transform="scale(0.97359068,1.0271257)"><tspan
+         sodipodi:role="line"
+         id="tspan3426"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:106.043px;font-family:'Bell MT';-inkscape-font-specification:'Bell MT, @wght=600,wdth=87.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 87, 'wght' 600;fill:#ffffff;fill-opacity:1;stroke-width:12.4361"
+         x="50.257839"
+         y="133.41843">R</tspan></text>
+  </g>
+</svg>

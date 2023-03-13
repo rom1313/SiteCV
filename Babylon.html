@@ -62,8 +62,8 @@
         var createScene = function () {
             var scene = new BABYLON.Scene(engine);
             var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 5, 0.8, 5, new BABYLON.Vector3(0, 0, 0), scene);
-            camera.attachControl(canvas, true);
-            camera.lowerRadiusLimit = 2.5;
+
+            camera.lowerRadiusLimit = 5;
             camera.upperRadiusLimit = 10;
             camera.pinchDeltaPercentage = 0.01;
             camera.wheelDeltaPercentage = 0.01;
@@ -74,20 +74,20 @@
             BABYLON.ParticleHelper.CreateFromSnippetAsync("", scene, true);
 
             // 2nd Particle Sytem - Core
-            BABYLON.ParticleHelper.CreateFromSnippetAsync("EXaQ7M#5", scene, false);
+            BABYLON.ParticleHelper.CreateFromSnippetAsync("", scene, false);
 
             // 3rd Particle Sytem - Sparks
-            var sphereSpark = BABYLON.MeshBuilder.CreateSphere("sphereSpark", { diameter: 0.20, segments: 2 }, scene);
+            var sphereSpark = BABYLON.MeshBuilder.CreateSphere("sphereSpark", { diameter: 0.1, segments: 0.1 }, scene);
             sphereSpark.isVisible = false;
-       
+
 
             BABYLON.ParticleHelper.CreateFromSnippetAsync("UY098C#3", scene, false).then(system => {
                 system.emitter = sphereSpark;
             });
             // 4th Particle Sytem - Smoke
-            var sphereSmoke = BABYLON.MeshBuilder.CreateSphere("sphereSmoke", { diameter: 1, segments: 5 }, scene);
+            var sphereSmoke = BABYLON.MeshBuilder.CreateSphere("", { diameter: 0, segments: 0 }, scene);
             sphereSmoke.isVisible = false;
-            BABYLON.ParticleHelper.CreateFromSnippetAsync("UY098C#6", scene, false).then(system => {
+            BABYLON.ParticleHelper.CreateFromSnippetAsync("", scene, false).then(system => {
                 system.emitter = sphereSmoke;
             });
             return scene;
