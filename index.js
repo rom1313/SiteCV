@@ -26,8 +26,11 @@ genius.event("#acceuil", "click", () => {
 })
 
 genius.event("#articles", "click", () => {
+ 
     pageactuelle = "articles"
     changerpage("articles", contenupagehtml)
+   
+
 
 })
 genius.event("#contact", "click", () => {
@@ -136,6 +139,5 @@ li.forEach(element => {
         son.boutton.play()
     });
 });
-
 
 
