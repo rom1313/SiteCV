@@ -7,8 +7,6 @@
 <h1 class="titreeffet">Skills</h1>
 `,d=`
 <h1 class="titreeffet">Projets</h1>
-
-
 <img id="flechegauchepixel" src="./ressources/img/flechegauche.png" alt="">
 <img id="flechedroitepixel" src="./ressources/img/flechedroite.png" alt="">
 <p id="descriptionpixel"><p/>`,x=`

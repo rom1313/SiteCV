@@ -3,24 +3,24 @@
 // todo -------------------------- Variables -----------------------------------
 const genius = $;
 const input = document.querySelector("input");
-let ulmenu = false
+let ulmenu = false;
 
 // todo -------------------------- Event img -----------------------------------
 document.querySelectorAll(".img").forEach(element => {
-    let idtext = element.children[1].id
-    let idcoeur = element.children[2].id
-    let idimg = element.children[0].id
+    let idtext = element.children[1].id;
+    let idcoeur = element.children[2].id;
+    let idimg = element.children[0].id;
 
 
     element.addEventListener("mouseover", (e) => {
-        document.querySelector(`#${idtext}`).style.opacity = 1
-        document.querySelector(`#${idcoeur}`).style.opacity = 1
+        document.querySelector(`#${idtext}`).style.opacity = 1;
+        document.querySelector(`#${idcoeur}`).style.opacity = 1;
 
-    })
+    });
     element.addEventListener("mouseout", () => {
-        document.querySelector(`#${idtext}`).style.opacity = 0
-        document.querySelector(`#${idcoeur}`).style.opacity = 0
-    })
+        document.querySelector(`#${idtext}`).style.opacity = 0;
+        document.querySelector(`#${idcoeur}`).style.opacity = 0;
+    });
 });
 
 
@@ -28,36 +28,36 @@ document.querySelectorAll(".img").forEach(element => {
 
 document.querySelectorAll(".coeur").forEach(element => {
     element.addEventListener("click", (e) => {
-        e.target.style.textShadow = "0 0 0 red"
-    })
+        e.target.style.textShadow = "0 0 0 red";
+    });
 });
 // todo -------------------------- Event input -----------------------------------
 
 
 input.onkeydown = (e) => {
     if (e.code === "Enter") {
-        recherche()
+        recherche();
     }
-}
+};
 // todo -------------------------- Event logo recherche-----------------------------------
 genius.event('#svgsearch', 'click', (e) => {
-    recherche()
-})
+    recherche();
+});
 // todo -------------------------- Event MENU PAD-----------------------------------
 genius.event('#ulmenu', 'click', (e) => {
 
-    document.querySelector("ul").style.display = "flex"
-    document.querySelector("ul").focus()
-    ulmenu = true
-})
+    document.querySelector("ul").style.display = "flex";
+    document.querySelector("ul").focus();
+    ulmenu = true;
+});
 
 
 document.querySelector("ul").addEventListener("focusout", () => {
     if (ulmenu) {
-        document.querySelector("ul").style.display = "none"
+        document.querySelector("ul").style.display = "none";
     }
 
-})
+});
 
 // todo -------------------------- Fonction -----------------------------------
 
@@ -65,16 +65,16 @@ document.querySelector("ul").addEventListener("focusout", () => {
 function recherche() {
 
     if (input.value === "" || input.value === undefined) {
-        input.placeholder = 'Entrez un mot...'
+        input.placeholder = 'Entrez un mot...';
         genius.timeursecondes(1, () => {
-            input.placeholder = "Recherche..."
-        })
+            input.placeholder = "Recherche...";
+        });
     }
     else {
-        input.value = ""
-        input.placeholder = "Aucun résultat..."
+        input.value = "";
+        input.placeholder = "Aucun résultat...";
         genius.timeursecondes(1, () => {
-            input.placeholder = "Recherche..."
-        })
+            input.placeholder = "Recherche...";
+        });
     }
 }

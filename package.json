@@ -6,6 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production & node server.js",
     "test": "node index.js",
+    "dev":"esbuild index.js --bundle --minify --outfile=bundle.js --watch",
     "buildCV":"esbuild index.js --bundle --minify --outfile=bundle.js",
     "buildMode":"esbuild ressources/autrespages/maquettemode/maquette.js --bundle --minify --outfile=ressources/autrespages/maquettemode/bundleMode.js"
   },
