@@ -1,6 +1,7 @@
 @font-face {
     font-family: "versace";
     src: url("./Routtage.ttf");
+    font-display: fallback;
 }
 
 /* todo-------------------------------------------------------------- Animations ---------- */

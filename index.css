@@ -2,16 +2,19 @@
 @font-face {
     font-family: "font";
     src: url("./ressources/Abalone\ Smile.ttf");
+    font-display: fallback;
 }
 
 @font-face {
     font-family: "pixel";
     src: url("./ressources/pixelex.ttf");
+    font-display: fallback;
 }
 
 @font-face {
     font-family: "pixel2";
     src: url("./ressources/Expo-Bold.otf");
+    font-display: fallback;
 }
 
 
