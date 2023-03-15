@@ -57,7 +57,7 @@ export function blockpixelfunc() {
     div.appendChild(img)
     /*    div.appendChild(p) */
 
-    img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
+    img.src = `./ressources/img/pixelart/${[countfleche.value]}.webp`
     document.querySelector("#flechegauchepixel").classList.remove("invisible")
     document.querySelector("#flechedroitepixel").classList.remove("invisible")
 
@@ -73,7 +73,7 @@ export function blockpixelfunc() {
             countfleche.value--
 
             document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
-            img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
+            img.src = `./ressources/img/pixelart/${[countfleche.value]}.webp`
 
             lien()
         }
@@ -86,7 +86,7 @@ export function blockpixelfunc() {
         if (countfleche.value < imagespixelart.length - 1) {
             countfleche.value++
             document.querySelector("#descriptionpixel").innerHTML = descriptiontext[countfleche.value]
-            img.src = `./ressources/img/pixelart/${[countfleche.value]}.png`
+            img.src = `./ressources/img/pixelart/${[countfleche.value]}.webp`
 
             lien()
         }

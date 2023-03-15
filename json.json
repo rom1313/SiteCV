@@ -20,7 +20,7 @@
                 "nb_sides": 2
             },
             "image": {
-                "src": "./ressources/img/particule.png",
+                "src": "./ressources/img/particule.webp",
                 "width": 50,
                 "height": 50
             }
