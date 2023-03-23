@@ -6,14 +6,17 @@
   "scripts": {
     "start": "NODE_ENV=production & node server.js",
     "test": "node index.js",
-    "dev":"esbuild index.js --bundle --minify --outfile=bundle.js --watch",
-    "buildCV":"esbuild index.js --bundle --minify --outfile=bundle.js",
-    "buildMode":"esbuild ressources/autrespages/maquettemode/maquette.js --bundle --minify --outfile=ressources/autrespages/maquettemode/bundleMode.js"
+    "dev": "esbuild index.js --bundle --minify --outfile=bundle.js --watch",
+    "buildCV": "esbuild index.js --bundle --minify --outfile=bundle.js",
+    "buildMode": "esbuild ressources/autrespages/maquettemode/maquette.js --bundle --minify --outfile=ressources/autrespages/maquettemode/bundleMode.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@rom13/genius": "^1.2.29",
     "esbuild": "^0.17.11"
+  },
+  "devDependencies": {
+    "prettier": "2.8.4"
   }
 }
