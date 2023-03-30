@@ -3,8 +3,22 @@
   src: url("./Routtage.ttf");
   font-display: fallback;
 }
+:root {
+  --maincolor: antiquewhite;
+}
 
 /* todo-------------------------------------------------------------- Animations ---------- */
+@keyframes logo {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    width: 10vw;
+  }
+
+  to {
+    filter: blur(0px);
+  }
+}
 @keyframes apparitiontxt {
   from {
     color: transparent;
@@ -12,6 +26,17 @@
 
   to {
     color: black;
+  }
+}
+@keyframes titreafter {
+  from {
+    left: 0%;
+    width: 100;
+  }
+
+  to {
+    left: 100%;
+    width: 0;
   }
 }
 
@@ -53,7 +78,7 @@ html {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: var(--maincolor);
   padding: 0%;
   box-sizing: border-box;
   margin: 0%;
@@ -146,6 +171,19 @@ input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#titre::after {
+  content: "";
+  position: absolute;
+  background: var(--maincolor);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: block;
+  top: 0px;
+  animation: titreafter 2s ease forwards;
+  left: 0%;
+  border-radius: 40%;
+}
 
 #titre span {
   font-size: 3.8vw;
@@ -179,6 +217,8 @@ input::placeholder {
   transform: translate(-50%, -50%);
   z-index: 3;
   width: 5vw;
+  animation: logo 0.9s ease-in-out forwards;
+  will-change: filter width;
 }
 
 /* todo-------------------------------------------------------------- Block IMG ---------- */
@@ -207,11 +247,13 @@ input::placeholder {
   margin: auto;
   max-width: 150%;
 
-  width: fit-content;
   height: fit-content;
   overflow: hidden;
   margin-left: 0.5vw;
   margin-right: 1vw;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .img:hover {
