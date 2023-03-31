@@ -113,6 +113,6 @@ li.forEach((element) => {
     son.boutton.volume = 0.1;
     son.boutton.play();
 
-    console.log("tt");
+   
   });
 });
