@@ -4,7 +4,7 @@
   font-display: fallback;
 }
 :root {
-  --maincolor: antiquewhite;
+  --maincolor: rgb(250, 233, 215);
 }
 
 /* todo-------------------------------------------------------------- Animations ---------- */
@@ -87,6 +87,19 @@ body {
   height: 100%;
 }
 
+/* todo-------------------------------------------------------------- CHARGEMENT ---------- */
+#chargement {
+  position: absolute;
+  height: 173.5vh;
+  background-color:var(--maincolor);
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+  transition: all 1s;
+}
+.cacher {
+  opacity: 0;
+}
 /* todo-------------------------------------------------------------- MENU ---------- */
 
 ul {
