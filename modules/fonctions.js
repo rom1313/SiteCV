@@ -124,7 +124,7 @@ function lien() {
     }
     else if (countfleche.value === 4) {
         genius.event(".lien", "click", () => {
-            window.open("https://starwarsworld.netlify.app");
+            window.open("https://supernetwork.herokuapp.com");
         });
     }
 
